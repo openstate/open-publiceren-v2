@@ -1,7 +1,12 @@
 @import 'tailwindcss';
 
+@theme {
+	--breakpoint-xs: 480px;
+}
+
 @layer base {
 	html {
 		font-family: 'Work Sans', sans-serif;
+		background-color: theme('colors.stone.50');
 	}
 }
