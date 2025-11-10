@@ -20,10 +20,10 @@
 </header>
 
 <div
-	class="my-20 flex items-center justify-between gap-x-20 gap-y-8 rounded-xl border border-stone-300 bg-white px-10 py-8 text-stone-700 max-lg:flex-wrap max-lg:justify-center lg:my-24"
+	class="my-20 flex items-center justify-between gap-x-20 gap-y-8 rounded-xl border border-stone-300 bg-white px-10 py-8 max-lg:flex-wrap max-lg:justify-center lg:my-24"
 >
 	<div>
-		<h2 class="mb-6 text-2xl lg:text-3xl font-medium text-stone-800">Keuzehulp</h2>
+		<h2 class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Keuzehulp</h2>
 		<p class="mb-6 text-lg text-balance lg:max-w-2xl">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -43,8 +43,8 @@
 	/>
 </div>
 
-<div class="my-20 text-stone-700 lg:my-24">
-	<h2 class="mb-6 text-2xl lg:text-3xl font-medium text-stone-800">Bestandsformaten</h2>
+<div class="my-20 lg:my-24">
+	<h2 class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Bestandsformaten</h2>
 	<p class="mb-6 max-w-4xl text-lg text-balance">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua.
@@ -55,8 +55,8 @@
 				<div
 					class="w-70 shrink-0 snap-start scroll-mx-4 rounded-lg border border-stone-300 bg-white p-6"
 				>
-					<h3 class="mb-4 text-xl font-medium text-stone-700">Bestandsformaat</h3>
-					<p class="text-stone-700">
+					<h3 class="mb-4 text-xl font-medium">Bestandsformaat</h3>
+					<p class="">
 						Korte beschrijving van het bestandsformaat. Lorem ipsum dolor sit amet, consectetur
 						adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</p>
@@ -76,8 +76,8 @@
 	<Button href="/" size="md">bekijk alle formaten</Button>
 </div>
 
-<div class="my-20 text-stone-700 lg:my-24">
-	<h2 class="mb-6 text-2xl lg:text-3xl font-medium text-stone-800">Beleidskaders</h2>
+<div class="my-20 lg:my-24">
+	<h2 class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Beleidskaders</h2>
 	<p class="mb-6 max-w-4xl text-lg text-balance">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua.
@@ -88,8 +88,8 @@
 				<div
 					class="w-70 shrink-0 snap-start scroll-mx-4 rounded-lg border border-stone-300 bg-white p-6"
 				>
-					<h3 class="mb-4 text-xl font-medium text-stone-700">Beleidskader</h3>
-					<p class="text-stone-700">
+					<h3 class="mb-4 text-xl font-medium">Beleidskader</h3>
+					<p class="">
 						Korte beschrijving van het beleidskader. Lorem ipsum dolor sit amet, consectetur
 						adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</p>
@@ -109,9 +109,9 @@
 	<Button href="/" size="md">bekijk alle kaders</Button>
 </div>
 
-<div class="my-24 mb-48 flex items-center justify-between gap-16 text-stone-700 max-xl:flex-wrap">
+<div class="my-24 mb-48 flex items-center justify-between gap-16 max-xl:flex-wrap">
 	<div>
-		<h2 class="mb-6 text-2xl lg:text-3xl font-medium text-stone-800">Over Open Publiceren</h2>
+		<h2 class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Over Open Publiceren</h2>
 		<p class="mb-6 max-w-4xl text-lg text-balance">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do

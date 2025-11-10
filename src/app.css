@@ -8,5 +8,17 @@
 	html {
 		font-family: 'Work Sans', sans-serif;
 		background-color: theme('colors.stone.50');
+		color: theme('colors.stone.700');
+	}
+
+	* {
+		outline-width: 0;
+		outline-style: solid;
+		outline-color: theme(--color-amber-600);
+		outline-offset: 4px;
+	}
+
+	*:focus-visible {
+		outline-width: 2px;
 	}
 }
