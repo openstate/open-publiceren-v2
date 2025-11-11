@@ -2,6 +2,8 @@
 	import Button from '$lib/components/button.svelte';
 	import hero from '$lib/assets/hero.svg';
 	import video from '$lib/assets/video-placeholder.png';
+
+	let { data } = $props();
 </script>
 
 <header class="mt-8 flex justify-between gap-20 rounded-xl lg:mt-20 lg:mb-30">
@@ -43,7 +45,7 @@
 	/>
 </div>
 
-<div class="my-20 lg:my-24">
+<div class="my-20 lg:my-28">
 	<h2 class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Bestandsformaten</h2>
 	<p class="mb-6 max-w-4xl text-lg text-balance">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
@@ -51,16 +53,17 @@
 	</p>
 	<div class="relative -mx-4 mb-6">
 		<div class="flex snap-x snap-mandatory items-stretch gap-4 overflow-x-scroll px-4 py-2">
-			{#each { length: 10 }}
+			{#each data.formaten as formaat}
 				<div
-					class="w-70 shrink-0 snap-start scroll-mx-4 rounded-lg border border-stone-300 bg-white p-6"
+					class="min-h-65 w-80 shrink-0 snap-start scroll-mx-4 rounded-lg border border-stone-300 bg-white p-6"
 				>
-					<h3 class="mb-4 text-xl font-medium">Bestandsformaat</h3>
-					<p class="">
-						Korte beschrijving van het bestandsformaat. Lorem ipsum dolor sit amet, consectetur
-						adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p>
-					<Button href="/" variant="tertiary" size="md" class="mt-4">lees meer →</Button>
+					<div class="flex h-full flex-col">
+						<h3 class="mb-4 text-xl font-medium">{formaat.title}</h3>
+						<p class="grow">{formaat.description}</p>
+						<Button href="/formaten/{formaat.id}" variant="tertiary" size="md" class="mt-4">
+							lees meer →
+						</Button>
+					</div>
 				</div>
 			{/each}
 		</div>
@@ -76,7 +79,7 @@
 	<Button href="/" size="md">bekijk alle formaten</Button>
 </div>
 
-<div class="my-20 lg:my-24">
+<div class="my-20 lg:my-28">
 	<h2 class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Beleidskaders</h2>
 	<p class="mb-6 max-w-4xl text-lg text-balance">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
@@ -84,16 +87,17 @@
 	</p>
 	<div class="relative -mx-4 mb-6">
 		<div class="flex snap-x snap-mandatory items-stretch gap-4 overflow-x-scroll px-4 py-2">
-			{#each { length: 10 }}
+			{#each data.kaders as kader}
 				<div
-					class="w-70 shrink-0 snap-start scroll-mx-4 rounded-lg border border-stone-300 bg-white p-6"
+					class="w-80 shrink-0 snap-start scroll-mx-4 rounded-lg border border-stone-300 bg-white p-6"
 				>
-					<h3 class="mb-4 text-xl font-medium">Beleidskader</h3>
-					<p class="">
-						Korte beschrijving van het beleidskader. Lorem ipsum dolor sit amet, consectetur
-						adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p>
-					<Button href="/" variant="tertiary" size="md" class="mt-4">lees meer →</Button>
+					<div class="flex h-full flex-col">
+						<h3 class="mb-4 text-xl font-medium">{kader.title}</h3>
+						<p class="grow">{kader.description}</p>
+						<Button href="/kaders/{kader.id}" variant="tertiary" size="md" class="mt-4">
+							lees meer →
+						</Button>
+					</div>
 				</div>
 			{/each}
 		</div>
@@ -109,7 +113,7 @@
 	<Button href="/" size="md">bekijk alle kaders</Button>
 </div>
 
-<div class="my-24 mb-48 flex items-center justify-between gap-16 max-xl:flex-wrap">
+<div class="my-20 flex items-center justify-between gap-16 max-xl:flex-wrap lg:my-28">
 	<div>
 		<h2 class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Over Open Publiceren</h2>
 		<p class="mb-6 max-w-4xl text-lg text-balance">
