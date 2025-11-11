@@ -12,13 +12,11 @@
 	}
 
 	* {
-		outline-width: 0;
-		outline-style: solid;
-		outline-color: theme(--color-amber-600);
+		outline: 0px solid theme('colors.amber.600');
 		outline-offset: 4px;
 	}
 
 	*:focus-visible {
-		outline-width: 2px;
+		outline: 2px solid theme('colors.amber.600');
 	}
 }
