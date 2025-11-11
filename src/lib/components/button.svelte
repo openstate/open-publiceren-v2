@@ -9,7 +9,7 @@
 			variant: {
 				primary: 'rounded-lg bg-amber-300 text-amber-950 hover:bg-amber-400',
 				secondary:
-					'rounded-lg border border-stone-300 text-stone-600 hover:bg-stone-100 hover:text-stone-800',
+					'rounded-lg border bg-white border-stone-300 text-stone-600 hover:bg-stone-100 hover:text-stone-800',
 				tertiary: 'rounded text-amber-700 hover:text-amber-900'
 			},
 			size: { md: 'text-lg', lg: 'text-xl' }

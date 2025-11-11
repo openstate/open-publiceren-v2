@@ -18,15 +18,15 @@
 	ga naar de inhoud
 </a>
 
-{#if PUBLIC_IS_WIP}
-	<div class="border-b border-stone-300 bg-amber-200 py-2 text-center text-balance text-amber-900">
+{#if PUBLIC_IS_WIP === '1'}
+	<div class="border-y border-stone-300 bg-amber-200 py-2 text-center text-balance text-amber-900">
 		<strong class="font-semibold">Let op:</strong>
 		Deze website is een testversie. Sommige functionaliteiten of teksten kunnen onvolledig of onjuist
 		zijn.
 	</div>
 {/if}
 
-<div class="relative z-100 border-b border-stone-300 bg-white">
+<div class="relative z-100 border-b border-stone-300">
 	<header class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 text-lg sm:py-7">
 		<a href="/">
 			<img
