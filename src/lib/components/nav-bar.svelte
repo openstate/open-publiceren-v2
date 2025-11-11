@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { PUBLIC_IS_WIP } from '$env/static/public';
 	import logo from '$lib/assets/logo.svg';
 	import Button from './button.svelte';
 
@@ -12,10 +13,18 @@
 
 <a
 	href="#inhoud"
-	class="absolute top-4 left-4 rounded-lg bg-amber-300 px-5 py-2.5 text-lg font-medium text-amber-950 focus-visible:z-200"
+	class="absolute top-4 left-4 z-200 rounded-lg bg-amber-300 px-5 py-2.5 text-lg font-medium text-amber-950 not-focus-within:sr-only"
 >
 	ga naar de inhoud
 </a>
+
+{#if PUBLIC_IS_WIP}
+	<div class="border-b border-stone-300 bg-amber-200 py-2 text-center text-balance text-amber-900">
+		<strong class="font-semibold">Let op:</strong>
+		Deze website is een testversie. Sommige functionaliteiten of teksten kunnen onvolledig of onjuist
+		zijn.
+	</div>
+{/if}
 
 <div class="relative z-100 border-b border-stone-300 bg-white">
 	<header class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 text-lg sm:py-7">
@@ -64,7 +73,7 @@
 			<!-- Backdrop -->
 			<label
 				for="mobile-menu"
-				class="pointer-events-none fixed inset-0 top-30 z-40 hidden cursor-pointer bg-stone-900/20 peer-checked/menu:pointer-events-auto peer-checked/menu:block"
+				class="pointer-events-none fixed inset-0 top-50 z-40 hidden cursor-pointer bg-stone-900/20 peer-checked/menu:pointer-events-auto peer-checked/menu:block"
 			></label>
 
 			<!-- Menu Panel -->
