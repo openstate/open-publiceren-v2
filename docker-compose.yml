@@ -15,7 +15,7 @@ services:
 networks:
   internal:
   # On a local machine, create this network befor running the container
-    # docker network create -d bridge  docker_nginx-load-balancer
+  # docker network create -d bridge  docker_nginx-load-balancer
   nginx-load-balancer:
     external: true
     name: docker_nginx-load-balancer

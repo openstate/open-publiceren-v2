@@ -37,14 +37,17 @@
 	}: Props = $props();
 
 	const classes = $derived(button({ variant, size, className }));
+
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any --- otherwise overly complex type error
+	const getRestProps = () => rest as any;
 </script>
 
 {#if href}
-	<a {href} class={classes} {...rest as any}>
+	<a {href} class={classes} {...getRestProps()}>
 		{@render children?.()}
 	</a>
 {:else}
-	<button class={classes} type="button" {...rest as any}>
+	<button class={classes} type="button" {...getRestProps()}>
 		{@render children?.()}
 	</button>
 {/if}

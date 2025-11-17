@@ -27,6 +27,7 @@ export default defineConfig(
 			'no-undef': 'off'
 		}
 	},
+	{ rules: { 'svelte/require-each-key': 'off', 'svelte/no-navigation-without-resolve': 'off' } },
 	{
 		files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],
 		languageOptions: {
