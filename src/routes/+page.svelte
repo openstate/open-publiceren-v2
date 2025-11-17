@@ -131,3 +131,12 @@
 		<track default kind="captions" src={videoCaptions} srclang="nl" label="Nederlands" />
 	</video>
 </div>
+
+<style>
+	video::cue {
+		font-size: 18px;
+		line-height: 1.2;
+		color: white;
+		background: black;
+	}
+</style>
