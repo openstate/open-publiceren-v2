@@ -1,7 +1,9 @@
 <script lang="ts">
 	import Button from '$lib/components/button.svelte';
 	import hero from '$lib/assets/hero.svg';
-	import video from '$lib/assets/video-placeholder.png';
+	import video from '$lib/assets/video.webm';
+	import videoPlaceholder from '$lib/assets/video-placeholder.png';
+	import videoCaptions from '$lib/assets/video-captions.vtt';
 
 	let { data } = $props();
 </script>
@@ -124,10 +126,8 @@
 		</p>
 		<Button href="/" variant="secondary" size="md">lees meer</Button>
 	</div>
-	<img
-		src={video}
-		width={700}
-		alt="Video over Open Publiceren"
-		class="rounded-xl border border-white"
-	/>
+	<video controls poster={videoPlaceholder} width={900} class="overflow-hidden rounded-xl">
+		<source src={video} type="video/webm" />
+		<track default kind="captions" src={videoCaptions} srclang="nl" label="Nederlands" />
+	</video>
 </div>
