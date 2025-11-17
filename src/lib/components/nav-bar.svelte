@@ -7,7 +7,7 @@
 		{ href: '/', label: 'bestandsformaten', type: 'link' },
 		{ href: '/', label: 'beleidskaders', type: 'link' },
 		{ href: '/', label: 'over ons', type: 'link' },
-		{ href: '/', label: 'keuzehulp', type: 'cta' }
+		{ href: '/keuzehulp', label: 'keuzehulp', type: 'cta' }
 	] satisfies Array<{ href: string; label: string; type: 'link' | 'cta' }>;
 </script>
 

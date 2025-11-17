@@ -17,7 +17,7 @@
 			eiusmod tempor incididunt ut labore et dolore magna aliqua.
 		</p>
 		<div class="flex gap-4 text-center max-xs:flex-col xs:items-center">
-			<Button href="/">start keuzehulp</Button>
+			<Button href="/keuzehulp">start keuzehulp</Button>
 			<Button href="/" variant="secondary">lees meer</Button>
 		</div>
 	</div>
@@ -34,7 +34,7 @@
 			eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt
 			ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet
 		</p>
-		<Button href="/" variant="tertiary">start keuzehulp →</Button>
+		<Button href="/keuzehulp" variant="tertiary">start keuzehulp →</Button>
 	</div>
 	<img
 		src={hero}
