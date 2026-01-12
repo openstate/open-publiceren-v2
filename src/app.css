@@ -9,6 +9,8 @@
 		font-family: 'Work Sans Variable', sans-serif;
 		background-color: theme('colors.white');
 		color: theme('colors.stone.700');
+		scroll-behavior: smooth;
+		scroll-padding-top: 4rem;
 	}
 
 	* {

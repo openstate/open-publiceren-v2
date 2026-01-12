@@ -48,7 +48,7 @@
 </div>
 
 <div class="my-20 lg:my-28">
-	<h2 class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Bestandsformaten</h2>
+	<h2 id="hoe-het-kan" class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Hoe kan ik Open Publiceren?</h2>
 	<p class="mb-6 max-w-4xl text-lg text-balance">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua.
@@ -82,7 +82,7 @@
 </div>
 
 <div class="my-20 lg:my-28">
-	<h2 class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Beleidskaders</h2>
+	<h2 id="waarom-het-moet" class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Waarom moet ik Open Publiceren?</h2>
 	<p class="mb-6 max-w-4xl text-lg text-balance">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua.
@@ -117,7 +117,7 @@
 
 <div class="my-20 flex items-center justify-between gap-16 max-xl:flex-wrap lg:my-28">
 	<div>
-		<h2 class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Over Open Publiceren</h2>
+		<h2 id="over-ons" class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Over Open Publiceren</h2>
 		<p class="mb-6 max-w-4xl text-lg text-balance">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do

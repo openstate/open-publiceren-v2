@@ -4,7 +4,7 @@
 	import type { HTMLAttributes } from 'svelte/elements';
 
 	const button = cva({
-		base: 'inline-block font-medium transition-colors',
+		base: 'inline-block font-medium transition-colors cursor-pointer',
 		variants: {
 			variant: {
 				primary: 'rounded-lg bg-amber-300 text-amber-950 hover:bg-amber-400',
