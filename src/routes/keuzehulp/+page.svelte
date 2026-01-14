@@ -1,59 +1,55 @@
 <script lang="ts">
-	import { quiz, results } from '$lib/quiz';
-	import type { quiz as quizType } from '$lib/quiz';
+	import { quiz, type Quiz, type QuizResult } from '$lib/quiz';
 	import Button from '$lib/components/button.svelte';
 
-	type Quiz = typeof quizType;
-	type QuizItem = Quiz[number];
-	type State = Parameters<NonNullable<QuizItem['when']>>[0];
-	type QuizId = QuizItem['id'];
+	let history = $state<string[]>([]);
 
-	type HistoryItem = {
-		questionId: QuizId;
-		selectedAnswer: string;
-	};
+	const traversal = $derived.by(() => {
+		let current: Quiz | QuizResult = quiz;
+		const questions = [];
+		let result: QuizResult | null = null;
 
-	let history = $state<HistoryItem[]>([]);
+		for (let i = 0; i <= history.length; i++) {
+			if ('result' in current) {
+				result = current;
+				break;
+			}
 
-	const currentState = $derived(
-		history.reduce((state, { questionId, selectedAnswer }) => {
-			// @ts-expect-error - Dynamic state assignment
-			state[questionId] = selectedAnswer;
-			return state;
-		}, {} as Partial<State>)
-	);
+			const answer = history[i];
+			questions.push({
+				index: i,
+				title: current.title,
+				question: current.question,
+				options: Object.keys(current.options),
+				selected: answer
+			});
 
-	const visibleQuestions = $derived.by(() => {
-		const answered = history
-			.map((h) => quiz.find((q) => q.id === h.questionId))
-			.filter((q): q is QuizItem => !!q && (!q.when || q.when(currentState)));
+			if (answer && current.options[answer]) {
+				current = current.options[answer];
+			} else {
+				break;
+			}
+		}
 
-		const next = quiz.find(
-			(q) => !history.some((h) => h.questionId === q.id) && (!q.when || q.when(currentState))
-		);
-
-		return next ? [...answered, next] : answered;
+		return { questions, result };
 	});
 
-	const matchingResult = $derived.by(() => {
-		return results.find((result) => result.when(currentState));
-	});
+	const visibleQuestions = $derived(traversal.questions);
+	const result = $derived(traversal.result);
 
 	$effect(() => {
 		if (visibleQuestions.length === 0) return;
-		const selector = "[data-option-id='" + visibleQuestions.at(-1)!.id + ".0']";
+		const lastIndex = visibleQuestions.length - 1;
+		const selector = `[data-option-id='${lastIndex}-0']`;
 		const element = document.querySelector(selector) as HTMLElement;
-		element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-		element.focus();
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			element.focus();
+		}
 	});
 
-	function handleOptionClick(question: QuizItem, answer: string) {
-		const index = visibleQuestions.findIndex((q) => q.id === question.id);
-		history = history.slice(0, index).concat({ questionId: question.id, selectedAnswer: answer });
-	}
-
-	function getSelectedAnswer(questionId: QuizId): string | undefined {
-		return history.find((h) => h.questionId === questionId)?.selectedAnswer;
+	function handleOptionClick(index: number, option: string) {
+		history = history.slice(0, index).concat(option);
 	}
 
 	function restart() {
@@ -64,18 +60,16 @@
 <div class="my-8 lg:my-12">
 	<h1 class="mb-8 text-2xl font-medium text-stone-800 lg:text-3xl">Keuzehulp</h1>
 	<div class="space-y-6">
-		{#each visibleQuestions as question (question.id)}
-			{@const selectedAnswer = getSelectedAnswer(question.id)}
-
+		{#each visibleQuestions as question (question.index)}
 			<div
 				class="overflow-hidden rounded-lg border border-stone-300 bg-white transition-all duration-200"
-				id="question-{question.id}"
+				id="question-{question.index}"
 			>
 				<div class="p-6">
 					<h2
 						class="mb-4 flex items-start justify-between gap-4 text-xl font-medium text-stone-800"
 					>
-						{question.heading}
+						{question.title}
 					</h2>
 
 					<p class="mb-6 text-lg">
@@ -83,13 +77,13 @@
 					</p>
 
 					<div class="flex flex-wrap gap-3">
-						{#each question.options as option, i (option)}
+						{#each question.options as option, optionIndex (option)}
 							<Button
-								data-option-id="{question.id}.{i}"
+								data-option-id="{question.index}-{optionIndex}"
 								variant="secondary"
 								size="md"
-								selected={selectedAnswer === option}
-								onclick={() => handleOptionClick(question, option)}
+								selected={question.selected === option}
+								onclick={() => handleOptionClick(question.index, option)}
 							>
 								{option}
 							</Button>
@@ -99,38 +93,39 @@
 			</div>
 		{/each}
 
-		{#if visibleQuestions.length > 0 && visibleQuestions.every((q) => getSelectedAnswer(q.id))}
+		{#if result}
 			<div class="overflow-hidden rounded-lg border border-stone-300 bg-white">
 				<div class="p-6">
-					<h2 class="mb-4 text-2xl font-medium text-stone-800">Resultaat</h2>
+					<h2 class="mb-4 text-2xl font-medium text-stone-800">Advies</h2>
 
-					{#if matchingResult}
-						<div class="mb-6">
-							{#each matchingResult.results as text, textIndex (textIndex)}
-								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-								<p class="mb-3 text-lg">{@html text}</p>
+					<p class="mb-3 text-lg">{result.result}</p>
+
+					{#if result}
+						<p class="mb-3 text-lg font-medium">
+							Lees verder voor meer informatie over {#if result.fileTypes.length === 0}dit formaat{:else}deze
+								formaten{/if}:
+						</p>
+						<div class="flex gap-3">
+							{#each result.fileTypes as fileType}
+								<Button href="/formaten/{fileType}" variant="secondary" size="md">
+									{fileType.toUpperCase()}
+								</Button>
 							{/each}
 						</div>
-					{:else}
-						<p class="mb-6 text-lg">
-							Op basis van je antwoorden kunnen we geen specifiek advies geven. Neem contact op voor
-							persoonlijk advies.
-						</p>
 					{/if}
-
-					<div class="mt-6 flex justify-start">
-						<Button onclick={restart} size="md">Opnieuw starten</Button>
-					</div>
 				</div>
 			</div>
 		{/if}
 	</div>
 
+	{#if result}
+		<div class="mt-6 flex gap-4">
+			<Button variant="primary" size="md">Advies delen</Button>
+			<Button onclick={restart} variant="secondary" size="md">Opnieuw starten</Button>
+		</div>
+	{/if}
+
 	{#if import.meta.env.DEV}
-		<pre class="mt-8 rounded-lg bg-stone-100 p-4 text-xs">{JSON.stringify(
-				currentState,
-				null,
-				2
-			)}</pre>
+		<pre class="mt-8 rounded-lg bg-stone-100 p-4 text-xs">{JSON.stringify(history, null, 2)}</pre>
 	{/if}
 </div>
