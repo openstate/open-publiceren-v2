@@ -34,27 +34,27 @@ const questions = {
 const result = {
 	doc: {
 		archive_online:
-			'Voor formele publicatie en archivering is PDF/A de norm. Voor optimaal online bereik en gebruiksgemak op alle apparaten is een webpagina (HTML) echter meer geschikt. De beste keuze is vaak om een webpagina te publiceren met de PDF als download voor formele doeleinden.',
+			'Voor formele publicatie en archivering is PDF de norm. Voor optimaal online bereik en gebruiksgemak op alle apparaten is een webpagina (HTML) echter meer geschikt. De beste keuze is vaak om informatie op een webpagina te publiceren met de PDF/A als download voor formele doeleinden.',
 		archive_offline:
-			'Voor formele publicatie en archivering is PDF/A de norm. Zorg er wel voor dat de PDF digitaal toegankelijk is (PDF/UA), zodat de informatie voor iedereen beschikbaar is.',
+			'Voor formele publicatie en archivering is PDF de norm. Zorg er wel voor dat de PDF digitaal toegankelijk is (PDF/UA), zodat de informatie voor iedereen beschikbaar is.',
 		editable:
-			'Voor documenten die de ontvanger moet kunnen bewerken, is ODT de geadviseerde open standaard. We raden het gebruik van andere gesloten formaten af.',
+			'Voor documenten die de ontvanger moet kunnen bewerken, is zijn Open Document-formaten (ODF), zoals ODT voor tekst of ODP voor presentaties, de geadviseerde en verplichte open standaard. We raden het gebruik van andere gesloten of applicatie-specifieke formaten af. Werk direct in een ODF-formaat om informatie- en opmaakverlies door latere conversie te voorkomen.',
 		editable_online:
-			'Voor optimaal online bereik en gebruiksgemak op alle apparaten is een webpagina (HTML) daarnaast de beste optie. Overweeg beide formaten aan te bieden.',
+			'Een webpagina (HTML) is daarnaast de beste optie voor optimaal online bereik en gebruiksgemak op alle apparaten, zoals laptops en smartphones. Overweeg beide formaten aan te bieden.',
 		read_online:
-			'We adviseren een webpagina (HTML) te publiceren. Dit is de standaard voor informatie op het web en zorgt voor optimaal bereik en gebruiksgemak op alle apparaten.',
+			'We adviseren een webpagina (HTML) te publiceren. Dit is de standaard voor informatie op het internet en zorgt voor optimaal bereik en gebruiksgemak op alle apparaten, zoals laptops en smartphones.',
 		read_online_print:
 			'Zorg er daarnaast voor dat de webpagina de juiste opmaak heeft voor printen, of bied een printvriendelijke versie aan als PDF.',
 		fixed:
 			'Als het behoud van de exacte opmaak essentieel is, dan is publicatie in PDF een logische keuze. Het is wel belangrijk dat het bestand voldoet aan de eisen voor digitale toegankelijkheid (PDF/UA), zodat de informatie voor iedereen beschikbaar is.',
 		long_read:
-			'Zowel PDF als EPUB geschikte formaten om documenten te publiceren. PDF biedt zekerheid over een exacte opmaak, terwijl EPUB zich flexibel aanpast aan het scherm van de lezer. Overweeg één of beide formaten aan te bieden.',
+			'Zowel PDF als EPUB geschikte formaten om documenten te publiceren. PDF biedt zekerheid over een exacte opmaak, terwijl EPUB zich flexibel aanpast aan de grootte van het scherm van de lezer. Overweeg één of beide formaten aan te bieden.',
 		data_check:
-			'Overweeg ook om de onderliggende gegevens als open data aan te bieden, om hergebruik te stimuleren en transparantie te bevorderen. Je kunt de keuzehulp opnieuw doorlopen voor advies over geschikte dataformaten.'
+			'Overweeg ook om de onderliggende gegevens, zoals data en cijfers, als open data aan te bieden, om hergebruik te stimuleren en transparantie te bevorderen. Je kunt de keuzehulp opnieuw doorlopen voor advies over geschikte dataformaten.'
 	},
 	data: {
 		spreadsheet_logic:
-			'Als diagrammen en formules behouden moeten blijven, adviseren we om de data te publiceren als ODS. We raden het gebruik van andere gesloten formaten af.',
+			'Als diagrammen en formules behouden moeten blijven, adviseren we om de data te publiceren als ODS. We raden het gebruik van andere gesloten of applicatie-specifieke formaten af.',
 		spreadsheet_mix:
 			'We adviseren om de data in twee formaten te publiceren: een ODS-bestand voor wie de tabel met opmaak wil zien en een CSV-bestand voor hergebruik door dataspecialisten.',
 		raw_csv:
@@ -62,16 +62,16 @@ const result = {
 		complex:
 			'Voor complexe datastructuren zijn JSON en XML de geadviseerde open formaten. Deze zijn breed toepasbaar en machineleesbaar.',
 		complex_linked:
-			'Raadpleeg dataspecialisten in jouw organisatie of jouw gegevens geschikt zijn om te publiceren als Linked Data (RDF). Dit maakt hergebruik en koppeling met andere gegevensbronnen nog eenvoudiger.',
-		api: 'Bij regelmatige updates wordt het sterk aanbevolen om een API beschikbaar te stellen, zodat systemen de data automatisch kunnen ophalen wanneer het is bijgewerkt. Raadpleeg dataspecialisten in jouw organisatie voor mogelijkheden en implementatie.',
+			'Raadpleeg dataspecialisten in jouw organisatie of jouw gegevens geschikt zijn om te publiceren als Linked Data (RDF). Deze standaard is bij uitstek geschikt op basis van betekenis te verbinden met andere bronnen, wat de herbruikbaarheid vergroot.',
+		api: 'Bij regelmatige updates is het sterk aanbevolen om een API beschikbaar te stellen, zodat systemen de data automatisch kunnen ophalen wanneer het is bijgewerkt. Raadpleeg dataspecialisten in jouw organisatie voor mogelijkheden en implementatie.',
 		complex_linked_api:
-			'Bij regelmatige updates van gekoppelde gegevensbronnen is het sterk aanbevolen om een API beschikbaar te stellen, zodat systemen de data automatisch kunnen ophalen wanneer het is bijgewerkt. Overweeg daarnaast publicatie als Linked Data (RDF) voor koppeling met andere gegevensbronnen. Raadpleeg dataspecialisten in jouw organisatie voor mogelijkheden en implementatie.'
+			'Bij regelmatige updates van gekoppelde gegevensbronnen is het sterk aanbevolen om een API beschikbaar te stellen, zodat systemen de data automatisch kunnen ophalen wanneer het is bijgewerkt. Overweeg daarnaast publicatie als Linked Data (RDF) voor koppeling met andere bronnen op basis van betekenis. Raadpleeg dataspecialisten in jouw organisatie voor mogelijkheden en implementatie.'
 	},
 	img: {
 		vector:
-			(type: string) => `Voor ${type} raden we het formaat SVG aan. Dit is een open standaard die bij vergroten altijd scherp blijft.`,
+			(type: string) => `Voor ${type} raden we het formaat SVG aan. Dit is een open standaard die bij het vergroten van ${type} altijd scherp blijft.`,
 		raster:
-			"Voor foto's is PNG het meest geschikte open formaat. Dit formaat behoudt de beeldkwaliteit zonder compressieverlies.",
+			"Voor foto's is PNG het meest geschikte open formaat. Dit formaat behoudt de beeldkwaliteit zonder scherpteverlies door compressie.",
 		doc_check: "Je kunt de keuzehulp opnieuw doorlopen voor advies over geschikte publicatieformaten voor de tekst waar de afbeelding onderdeel van is."
 	}
 } as const;
@@ -124,11 +124,11 @@ export const quiz = {
 							options: {
 								ja: {
 									result: [result.doc.editable, result.doc.editable_online].join(' '),
-									fileTypes: ['odt', 'html']
+									fileTypes: ['odf', 'html']
 								},
 								nee: {
 									result: result.doc.editable,
-									fileTypes: ['odt']
+									fileTypes: ['odf']
 								}
 							}
 						},
@@ -232,11 +232,11 @@ export const quiz = {
 									options: {
 										ja: {
 											result: [result.data.spreadsheet_mix, result.data.api].join(' '),
-											fileTypes: ['ods', 'csv']
+											fileTypes: ['odf', 'csv']
 										},
 										nee: {
 											result: result.data.spreadsheet_mix,
-											fileTypes: ['ods', 'csv']
+											fileTypes: ['odf', 'csv']
 										}
 									}
 								},
