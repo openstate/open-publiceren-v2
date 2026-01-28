@@ -48,7 +48,9 @@
 </div>
 
 <div class="my-20 lg:my-28">
-	<h2 id="hoe-het-kan" class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Hoe kan ik Open Publiceren?</h2>
+	<h2 id="hoe-het-kan" class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">
+		Hoe kan ik Open Publiceren?
+	</h2>
 	<p class="mb-6 max-w-4xl text-lg text-balance">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua.
@@ -57,7 +59,7 @@
 		<div class="flex snap-x snap-mandatory items-stretch gap-4 overflow-x-scroll px-4 py-2">
 			{#each data.formaten as formaat}
 				<div
-					class="min-h-65 w-80 shrink-0 snap-start scroll-mx-4 rounded-lg border border-stone-300 bg-white p-6"
+					class="min-h-65 w-74 shrink-0 snap-start scroll-mx-4 rounded-lg border border-stone-300 bg-white p-6"
 				>
 					<div class="flex h-full flex-col">
 						<h3 class="mb-4 text-xl font-medium">{formaat.title}</h3>
@@ -82,7 +84,9 @@
 </div>
 
 <div class="my-20 lg:my-28">
-	<h2 id="waarom-het-moet" class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Waarom moet ik Open Publiceren?</h2>
+	<h2 id="waarom-het-moet" class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">
+		Waarom moet ik Open Publiceren?
+	</h2>
 	<p class="mb-6 max-w-4xl text-lg text-balance">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua.
@@ -91,7 +95,7 @@
 		<div class="flex snap-x snap-mandatory items-stretch gap-4 overflow-x-scroll px-4 py-2">
 			{#each data.kaders as kader}
 				<div
-					class="w-80 shrink-0 snap-start scroll-mx-4 rounded-lg border border-stone-300 bg-white p-6"
+					class="w-74 shrink-0 snap-start scroll-mx-4 rounded-lg border border-stone-300 bg-white p-6"
 				>
 					<div class="flex h-full flex-col">
 						<h3 class="mb-4 text-xl font-medium">{kader.title}</h3>
@@ -117,7 +121,9 @@
 
 <div class="my-20 flex items-center justify-between gap-16 max-xl:flex-wrap lg:my-28">
 	<div>
-		<h2 id="over-ons" class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Over Open Publiceren</h2>
+		<h2 id="over-ons" class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">
+			Over Open Publiceren
+		</h2>
 		<p class="mb-6 max-w-4xl text-lg text-balance">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
