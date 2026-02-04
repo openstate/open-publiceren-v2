@@ -1,6 +1,7 @@
 ---
 title: EPUB
 description: Een open standaard voor e-books en digitale publicaties. De tekst past zich aan elk schermformaat aan, ideaal voor langere documenten die offline gelezen worden.
+sorting_score: 50
 ---
 
 EPUB (Electronic Publication) is een open standaard voor e-books en digitale publicaties. De tekst past zich automatisch aan het scherm van de lezer aan, net als HTML.

@@ -1,6 +1,7 @@
 ---
 title: HTML
 description: Publiceer informatie als webpagina die direct leesbaar is. Toegankelijk, vindbaar voor zoekmachines, mobiel-vriendelijk en beter dan PDF voor online lezen.
+sorting_score: 95
 ---
 
 Wanneer we spreken over 'publiceren in HTML', bedoelen we: maak een webpagina van de inhoud die je wilt publiceren. HTML is de technische basis van elke webpagina, maar als gebruiker hoef je daar niet over na te denken. Het gaat erom dat je informatie direct op je website plaatst als leesbare pagina — in plaats van als downloadbaar bestand zoals een [PDF](/formaten/pdf) of [EPUB](/formaten/epub).

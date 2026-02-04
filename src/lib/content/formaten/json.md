@@ -1,6 +1,7 @@
 ---
 title: JSON
 description: Een formaat voor gestructureerde gegevens in API's. Voor ontwikkelaars die data ophalen en systemen integreren, niet voor publicatie aan gewone lezers.
+sorting_score: 65
 ---
 
 JSON (JavaScript Object Notation) is een formaat voor gestructureerde gegevens dat vooral wordt gebruikt voor geautomatiseerde gegevensuitwisseling tussen systemen. Je komt JSON vrijwel uitsluitend tegen in API's (Application Programming Interfaces) — de technische koppelingen waarmee software met elkaar communiceert en gegevens uitwisselen.

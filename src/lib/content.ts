@@ -5,7 +5,7 @@ export const contentTypes = ['formaten', 'kaders'] as const;
 
 export type ContentType = (typeof contentTypes)[number];
 
-export type Attributes = { title: string; description: string };
+export type Attributes = { title: string; description: string; sorting_score?: number };
 
 export const isContentType = (value: string): value is ContentType =>
 	contentTypes.includes(value as ContentType);
@@ -21,7 +21,7 @@ export async function getContent({ type, id }: { type: ContentType; id: string }
 }
 
 export async function getAllContent({ type }: { type: ContentType }) {
-	return Promise.all(
+	const items = await Promise.all(
 		Object.keys(glob)
 			.filter((path) => path.startsWith(`/src/lib/content/${type}/`))
 			.map(async (path) => {
@@ -31,4 +31,7 @@ export async function getAllContent({ type }: { type: ContentType }) {
 				return { ...attributes, id };
 			})
 	);
+
+	// Sort by sorting_score in descending order (higher score = earlier)
+	return items.sort((a, b) => (b.sorting_score ?? 0) - (a.sorting_score ?? 0));
 }

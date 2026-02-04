@@ -1,6 +1,7 @@
 ---
 title: Wet open overheid
 description: Verplicht overheden informatie op verzoek of actief openbaar te maken in toegankelijke, open formaten.
+sorting_score: 95
 ---
 
 De Wet open overheid (Woo) is de opvolger van de Wet openbaarheid van bestuur (Wob) en regelt de toegang tot overheidsinformatie. De wet stimuleert overheden om informatie actief openbaar te maken.

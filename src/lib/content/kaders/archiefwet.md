@@ -1,6 +1,7 @@
 ---
 title: Archiefwet
 description: Verplicht het in goede, geordende en toegankelijke staat brengen en duurzaam bewaren van overheidsinformatie.
+sorting_score: 80
 ---
 
 De Archiefwet regelt het beheer en de bewaring van overheidsarchieven. De wet stelt eisen aan hoe overheidsorganen hun informatie duurzaam bewaren en toegankelijk houden.

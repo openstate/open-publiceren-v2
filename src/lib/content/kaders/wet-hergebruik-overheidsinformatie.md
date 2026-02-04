@@ -1,6 +1,7 @@
 ---
 title: Wet hergebruik van overheidsinformatie
 description: Verplicht overheidsinformatie in machineleesbare open formaten beschikbaar te stellen voor hergebruik.
+sorting_score: 90
 ---
 
 De Wet hergebruik overheidsinformatie (Who) regelt dat overheidsinformatie beschikbaar wordt gesteld voor hergebruik door burgers, bedrijven en onderzoekers. De wet implementeert de Europese Open Data Richtlijn in Nederland.

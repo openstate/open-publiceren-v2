@@ -1,6 +1,7 @@
 ---
 title: Forum Standaardisatie
 description: Adviseert de overheid over open standaarden en beheert de verplichte 'Pas toe of leg uit'-lijst voor ICT-producten en -diensten van de overheid.
+sorting_score: 100
 ---
 
 Het Forum Standaardisatie adviseert de overheid en de publieke sector over open standaarden. Open standaarden verbeteren de samenwerking tussen bedrijven, burgers en de overheid.
