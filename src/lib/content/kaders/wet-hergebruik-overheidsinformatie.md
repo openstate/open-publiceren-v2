@@ -15,7 +15,7 @@ Als ambtenaar werk je mogelijk met informatie die anderen willen hergebruiken. D
 
 ### Relatie met de Woo
 
-De Who en de [Wet open overheid (Woo)](/kaders/woo) werken samen als een "tweetrapsraket":
+De Who en de [Wet open overheid (Woo)](/kaders/wet-open-overheid) werken samen als een "tweetrapsraket":
 
 - De **Woo** regelt of informatie openbaar wordt
 - De **Who** regelt in welk formaat openbare informatie wordt verstrekt

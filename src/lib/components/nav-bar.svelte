@@ -12,7 +12,7 @@
 </script>
 
 <a
-	href="#inhoud"
+	href="#content"
 	class="absolute top-4 left-4 z-200 rounded-lg bg-amber-300 px-5 py-2.5 text-lg font-medium text-amber-950 not-focus-within:sr-only"
 >
 	ga naar de inhoud

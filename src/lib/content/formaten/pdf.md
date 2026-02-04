@@ -38,7 +38,7 @@ PDF is geschikt wanneer de exacte opmaak van een document behouden moet blijven,
 * Toegankelijkheid vereist veelal gespecialiseerde kennis en aandacht
 
 ### Juridische context
-PDF is geen verplichting voor digitale toegankelijkheid. De [Wet open overheid (Woo)](/kaders/woo) en [Wet hergebruik overheidsinformatie (Who)](/kaders/who) moedigen aan om naast PDF ook een HTML-versie aan te bieden voor leesbaarheid en herbruikbaarheid.
+PDF is geen verplichting voor digitale toegankelijkheid. De [Wet open overheid (Woo)](/kaders/wet-open-overheid) en [Wet hergebruik overheidsinformatie (Who)](/kaders/wet-hergebruik-overheidsinformatie) moedigen aan om naast PDF ook een HTML-versie aan te bieden voor leesbaarheid en herbruikbaarheid.
 
 ### Tweesporenbeleid
 Overweeg om belangrijke informatie in twee formaten te publiceren:

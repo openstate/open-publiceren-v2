@@ -11,7 +11,7 @@
 				secondary: 'rounded-lg border ',
 				tertiary: 'rounded text-amber-700 hover:text-amber-900'
 			},
-			size: { md: 'text-lg', lg: 'text-xl' },
+			size: { sm: 'text-base', md: 'text-lg', lg: 'text-xl' },
 			selected: {
 				true: '',
 				false: ''

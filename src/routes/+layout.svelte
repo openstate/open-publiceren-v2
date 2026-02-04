@@ -6,6 +6,7 @@
 	import favicon512 from '$lib/assets/favicon-512.png';
 	import NavBar from '$lib/components/nav-bar.svelte';
 	import Footer from '$lib/components/footer.svelte';
+	import Breadcrumbs from '$lib/components/breadcrumbs.svelte';
 
 	let { children } = $props();
 </script>
@@ -20,7 +21,11 @@
 
 	<main id="inhoud" class="bg-stone-50">
 		<div class="mx-auto max-w-7xl p-6">
-			{@render children?.()}
+			<Breadcrumbs />
+
+			<div id="content">
+				{@render children?.()}
+			</div>
 		</div>
 	</main>
 

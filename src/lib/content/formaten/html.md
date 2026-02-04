@@ -18,7 +18,7 @@ Een webpagina biedt voordelen die een PDF niet heeft:
 
 ### Juridische context
 
-De [Wet open overheid (Woo)](/kaders/woo) en de [Wet hergebruik overheidsinformatie (Who)](/kaders/who) stimuleren het gebruik van open, toegankelijke formaten. Indien goed ingericht, voldoen webpagina's aan de eisen voor digitale toegankelijkheid (WCAG 2.1) en zijn daarmee een uitstekende keuze voor actieve openbaarmaking.
+De [Wet open overheid (Woo)](/kaders/wet-open-overheid) en de [Wet hergebruik overheidsinformatie (Who)](/kaders/wet-hergebruik-overheidsinformatie) stimuleren het gebruik van open, toegankelijke formaten. Indien goed ingericht, voldoen webpagina's aan de eisen voor digitale toegankelijkheid (WCAG 2.1) en zijn daarmee een uitstekende keuze voor actieve openbaarmaking.
 
 ### Meer informatie
 
