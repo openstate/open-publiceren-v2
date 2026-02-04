@@ -268,11 +268,11 @@ export const quiz = {
 									result: [result.data.complex, result.data.complex_linked_api].join(
 										' '
 									),
-									fileTypes: ['json', 'xml', 'rdf']
+									fileTypes: ['json', 'rdf']
 								},
 								nee: {
 									result: [result.data.complex, result.data.complex_linked].join(' '),
-									fileTypes: ['json', 'xml', 'rdf']
+									fileTypes: ['json', 'rdf']
 								}
 							}
 						},
@@ -281,11 +281,11 @@ export const quiz = {
 							options: {
 								ja: {
 									result: [result.data.complex, result.data.api].join(' '),
-									fileTypes: ['json', 'xml']
+									fileTypes: ['json']
 								},
 								nee: {
 									result: result.data.complex,
-									fileTypes: ['json', 'xml']
+									fileTypes: ['json']
 								}
 							}
 						}
