@@ -1,11 +1,17 @@
 import frontmatter from 'front-matter';
 import { marked } from 'marked';
 
-type ContentType = 'kaders' | 'formaten';
+export const contentTypes = ['formaten', 'kaders'] as const;
+
+export type ContentType = (typeof contentTypes)[number];
 
 export type Attributes = { title: string; description: string };
 
+export const isContentType = (value: string): value is ContentType =>
+	contentTypes.includes(value as ContentType);
+
 const glob = import.meta.glob('$lib/content/**/*.md', { query: '?raw', import: 'default' });
+console.log(glob)
 
 export async function getContent({ type, id }: { type: ContentType; id: string }) {
 	const path = `/src/lib/content/${type}/${id}.md`;

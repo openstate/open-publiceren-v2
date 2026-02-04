@@ -80,7 +80,7 @@
 		></div>
 	</div>
 
-	<Button href="/" size="md">bekijk alle formaten</Button>
+	<Button href="/formaten" size="md">bekijk alle formaten</Button>
 </div>
 
 <div class="my-20 lg:my-28">
@@ -116,7 +116,7 @@
 		></div>
 	</div>
 
-	<Button href="/" size="md">bekijk alle kaders</Button>
+	<Button href="/kaders" size="md">bekijk alle kaders</Button>
 </div>
 
 <div class="my-20 flex items-center justify-between gap-16 max-xl:flex-wrap lg:my-28">

@@ -1,12 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { getAllContent, getContent } from '$lib/content';
-
-const contentTypes = ['formaten', 'kaders'] as const;
-
-type ContentType = (typeof contentTypes)[number];
-
-const isContentType = (value: string): value is ContentType =>
-	contentTypes.includes(value as ContentType);
+import { getAllContent, getContent, isContentType, contentTypes } from '$lib/content';
 
 export const entries = async () => {
 	const [formaten, kaders] = await Promise.all(
