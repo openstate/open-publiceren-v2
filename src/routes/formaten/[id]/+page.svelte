@@ -3,7 +3,7 @@
 </script>
 
 <article class="my-16">
-	<h1 class="mb-8 text-3xl font-bold text-stone-800 sm:text-4xl">
+	<h1 class="mb-8 text-3xl font-semibold text-stone-800 sm:text-4xl">
 		{data.attributes.title}
 	</h1>
 

@@ -58,8 +58,8 @@
 </script>
 
 <div class="my-8 lg:my-12">
-	<h1 class="mb-8 text-2xl font-medium text-stone-800 lg:text-3xl">Keuzehulp</h1>
-	<div class="space-y-6">
+	<h1 class="mb-8 text-3xl font-semibold text-stone-800 sm:text-4xl">Keuzehulp</h1>
+	<div class="mt-12 space-y-6">
 		{#each visibleQuestions as question (question.index)}
 			<div
 				class="overflow-hidden rounded-lg border border-stone-300 bg-white transition-all duration-200"

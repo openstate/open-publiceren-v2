@@ -10,7 +10,7 @@
 
 <header class="mt-8 flex justify-between gap-20 rounded-xl lg:mt-20 lg:mb-30">
 	<div class="max-w-4xl">
-		<h1 class="mt-2 mb-8 text-4xl font-medium text-stone-800 sm:text-5xl">Open Publiceren</h1>
+		<h1 class="mt-2 mb-8 text-4xl font-semibold text-stone-800 sm:text-5xl">Open Publiceren</h1>
 		<p class="mb-8 text-lg text-balance lg:text-xl">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
