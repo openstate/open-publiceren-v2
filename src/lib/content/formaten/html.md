@@ -8,7 +8,7 @@ Wanneer we spreken over 'publiceren in HTML', bedoelen we: maak een webpagina va
 
 ### Waarom een webpagina in plaats van een PDF?
 
-Een webpagina biedt voordelen die een PDF niet heeft:
+Een webpagina biedt voordelen:
 
 - **Direct leesbaar**: Geen download van een bestand nodig, de lezer kan meteen aan de slag
 - **Toegankelijk**: Werkt goed met voorleessoftware voor mensen met een visuele beperking
@@ -19,7 +19,7 @@ Een webpagina biedt voordelen die een PDF niet heeft:
 
 ### Juridische context
 
-De [Wet open overheid (Woo)](/kaders/wet-open-overheid) en de [Wet hergebruik overheidsinformatie (Who)](/kaders/wet-hergebruik-overheidsinformatie) stimuleren het gebruik van open, toegankelijke formaten. Indien goed ingericht, voldoen webpagina's aan de eisen voor digitale toegankelijkheid (WCAG 2.1) en zijn daarmee een uitstekende keuze voor actieve openbaarmaking.
+De [Wet open overheid (Woo)](/kaders/wet-open-overheid) en de [Wet hergebruik overheidsinformatie (Who)](/kaders/wet-hergebruik-overheidsinformatie) stimuleren het gebruik van open, toegankelijke formaten. Indien goed ingericht, voldoen webpagina's aan de eisen voor digitale toegankelijkheid (WCAG 2.1) en zijn daarmee een uitstekende keuze voor actieve openbaarmaking. HTML is een [aanbevolen standaard](https://www.forumstandaardisatie.nl/open-standaarden/html) voor de overheid van het Forum Standaardisatie.
 
 ### Meer informatie
 

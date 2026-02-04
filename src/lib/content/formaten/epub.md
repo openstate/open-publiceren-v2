@@ -27,6 +27,9 @@ Kies EPUB wanneer de opmaak mag meevloeien met het scherm. Kies PDF wanneer de e
 ### Tweesporenbeleid
 Bied EPUB aan naast HTML: de HTML-versie voor direct online lezen, de EPUB voor offline gebruik en e-readers.
 
+### Juridische context
+EPUB  is een [aanbevolen standaard](https://www.forumstandaardisatie.nl/open-standaarden/epub) van het Forum Standaardisatie.
+
 ### Meer informatie
 
 - [EPUB-standaard](https://www.forumstandaardisatie.nl/open-standaarden/epub) (Forum Standaardisatie)

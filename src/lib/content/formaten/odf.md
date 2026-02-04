@@ -1,10 +1,10 @@
 ---
 title: ODF
-description: Een open standaard voor office-documenten (tekst, spreadsheet, presentatie). Gebruik dit wanneer ontvangers het document moeten kunnen bewerken.
+description: Een open standaard voor teksten, spreadsheets en presentaties. Gebruik dit wanneer ontvangers het document moeten kunnen bewerken.
 sorting_score: 100
 ---
 
-ODF (Open Document Format) is een open standaard voor office bestanden. Het bekendste ODF-formaat is ODT voor tekstdocumenten — de open tegenhanger van DOCX. Daarnaast bestaan er ODF-varianten voor o.a. spreadsheets (ODS, vergelijkbaar met XLSX) en presentaties (ODP, vergelijkbaar met PPTX).
+ODF (Open Document Format) is een open standaard voor het creëren en bewerken van documenten. Het bekendste ODF-formaat is ODT voor tekstdocumenten — de open tegenhanger van DOCX. Daarnaast bestaan er ODF-varianten voor o.a. spreadsheets (ODS, vergelijkbaar met XLSX) en presentaties (ODP, vergelijkbaar met PPTX).
 
 ### Wanneer gebruik je ODF?
 
@@ -21,11 +21,10 @@ Gebruik ODF wanneer de ontvanger het document moet kunnen bewerken. Denk aan:
 - **Bewerkbaar**: Ontvangers kunnen het document aanpassen
 - **Toekomstbestendig**: Langdurig leesbaar en archiveerbaar
 - **Digitoegankelijk**: een ODF-document is goed digitoegankelijk te maken
-- **Gratis** te openen
 
 ### Juridische context
 
-ODF staat op de verplichte 'Pas toe of leg uit'-lijst. De [Archiefwet](/kaders/archiefwet) geeft de voorkeur aan open formaten voor duurzame archivering. Het Nationaal Archief adviseert de formaten uit de ODF-familie als voorkeursformaten in de Norm Voorkeursformaten.
+ODF is een verplichte standaard voor de overheid en staat op de ['Pas toe of leg uit'-lijst](https://www.forumstandaardisatie.nl/open-standaarden/verplicht) van het [Forum Standaardisatie](/kaders/forum-standaardisatie). De [Archiefwet](/kaders/archiefwet) geeft de voorkeur aan open formaten voor duurzame archivering. Het Nationaal Archief adviseert de formaten uit de ODF-familie als voorkeursformaten in de Norm Voorkeursformaten.
 
 ### Praktische tip: open by design
 

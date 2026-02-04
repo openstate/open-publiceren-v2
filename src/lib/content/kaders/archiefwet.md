@@ -47,5 +47,5 @@ In de praktijk gebruiken de meeste organisaties nog Microsoft Office-formaten (O
 
 - [Archiefwet ](https://wetten.overheid.nl/BWBR0007376)   (wettekst)
 - [Nieuwe Archiefwet 20xx](https://www.nationaalarchief.nl/archiveren/kennisbank/nieuwe-archiefwet-2021) (Nationaal Archief)
-- [DUTO-principes](https://www.nationaalarchief.nl/archiveren/duto) (Nationaal Archief)
+- [DUTO-principes](https://www.nationaalarchief.nl/archiveren/duto), in het bijzonder: [DUTO Raamwerk 10](https://www.nationaalarchief.nl/archiveren/kennisbank/randvoorwaarden-generiek-deel) (Nationaal Archief)
 - [Norm Voorkeursformaten](https://www.nationaalarchief.nl/archiveren/kennisbank/voorkeursformaten) (Nationaal Archief)

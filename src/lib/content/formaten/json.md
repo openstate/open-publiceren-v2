@@ -67,7 +67,7 @@ JSON is relevant wanneer je organisatie een API aanbiedt, bijvoorbeeld voor:
 - Datasets op data.overheid.nl
 
 ### Juridische context
-De [Wet hergebruik overheidsinformatie (Who)](/kaders/who) verplicht overheidsorganen om data in een open en machineleesbaar formaat beschikbaar te stellen wanneer daar om wordt gevraagd. JSON voldoet aan deze eis. Voor API's gelden de REST API Design Rules van de 'Pas toe of leg uit'-lijst.
+De [Wet hergebruik overheidsinformatie (Who)](/kaders/who) verplicht overheidsorganen om data in een open en machineleesbaar formaat beschikbaar te stellen wanneer daar om wordt gevraagd. JSON voldoet aan deze eis. Voor API's zijn de REST API Design Rules verplicht voor de overheid via de 'Pas toe of leg uit'-lijst van het [Forum Standaardisatie](/kaders/forum-standaardisatie).
 
 ### Meer informatie
 
