@@ -47,5 +47,6 @@ De Woo geeft aan dat het "de voorkeur verdient" om te voldoen aan de eisen van d
 ### Meer informatie
 
 - [Wet open overheid](https://wetten.overheid.nl/BWBR0045754) (wettekst)
-- [Betekenisvolle actieve openbaarmaking](https://www.acoi.nl/actueel/nieuws/advies-over-actieve-openbaarmaking/) (ACOI)
+- [Advies Betekenisvolle actieve openbaarmaking](https://www.acoi.nl/publicaties/publicatie/gjqon1iz/wat-zou-u-zelf-willen-weten-advies-over-betekenisvolle-actieve-openbaarmaking) (ACOI)
+- [Handreiking Actief openbaarmaken doe je zo](https://www.open-overheid.nl/documenten/2026/01/06/actief-openbaar-maken-doe-je-zo-nieuwe-versie) (RDDI)
 - [Programma Open Overheid](https://www.open-overheid.nl)

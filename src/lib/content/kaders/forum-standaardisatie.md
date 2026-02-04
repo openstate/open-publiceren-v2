@@ -24,5 +24,5 @@ De Beslisboom Open Standaarden van Forum Standaardisatie helpt welke standaarden
 
 - [Forum Standaardisatie](https://www.forumstandaardisatie.nl)
 - [Beslisboom Open Standaarden](https://www.forumstandaardisatie.nl/beslisboom/beslisboom-open-standaarden)
-- [Pas toe of leg uit-beleid](https://www.forumstandaardisatie.nl/open-standaarden/pas-toe-of-leg-uit)
+- [Pas toe of leg uit-beleid](https://www.forumstandaardisatie.nl/pas-toe-leg-uit-beleid)
 - [Verplichte standaarden](https://www.forumstandaardisatie.nl/open-standaarden/verplicht)
