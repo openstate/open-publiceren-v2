@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { quiz, type Quiz, type QuizResult } from '$lib/quiz';
 	import Button from '$lib/components/button.svelte';
+	import { onMount } from 'svelte';
 
 	let history = $state<string[]>([]);
 
@@ -55,6 +56,45 @@
 	function restart() {
 		history = [];
 	}
+
+	let shareButtonText = $state('Advies delen');
+
+	async function shareResult() {
+		const url = new URL(window.location.href);
+		const encoded = btoa(JSON.stringify(history));
+		url.searchParams.set('h', encoded);
+		const shareUrl = url.toString();
+
+		try {
+			if (navigator.share) {
+				await navigator.share({
+					title: 'Keuzehulp Open Publiceren',
+					text: 'Bekijk mijn advies van de Keuzehulp Open Publiceren',
+					url: shareUrl
+				});
+			} else {
+				await navigator.clipboard.writeText(shareUrl);
+				shareButtonText = 'Link gekopieerd';
+				setTimeout(() => {
+					shareButtonText = 'Advies delen';
+				}, 2000);
+			}
+		} catch (e) {
+			console.error('Failed to share or copy', e);
+		}
+	}
+
+	onMount(() => {
+		const params = new URLSearchParams(window.location.search);
+		const historyParam = params.get('h');
+		if (historyParam) {
+			try {
+				history = JSON.parse(atob(historyParam));
+			} catch (e) {
+				console.error('Failed to parse history from URL', e);
+			}
+		}
+	});
 </script>
 
 <div class="my-8 lg:my-12">
@@ -120,7 +160,9 @@
 
 	{#if result}
 		<div class="mt-6 flex gap-4">
-			<Button variant="primary" size="md">Advies delen</Button>
+			<Button onclick={shareResult} variant="primary" size="md">
+				{shareButtonText}
+			</Button>
 			<Button onclick={restart} variant="secondary" size="md">Opnieuw starten</Button>
 		</div>
 	{/if}
