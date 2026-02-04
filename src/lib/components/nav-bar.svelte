@@ -4,8 +4,8 @@
 	import Button from './button.svelte';
 
 	const items = [
-		{ href: '/#hoe-het-kan', label: 'hoe het kan', type: 'link' },
-		{ href: '/#waarom-het-moet', label: 'waarom het moet', type: 'link' },
+		{ href: '/#hoe-het-kan', label: 'hoe open publiceren', type: 'link' },
+		{ href: '/#waarom-het-moet', label: 'waarom open publiceren', type: 'link' },
 		{ href: '/#over-ons', label: 'over ons', type: 'link' },
 		{ href: '/keuzehulp', label: 'keuzehulp', type: 'cta' }
 	] satisfies Array<{ href: string; label: string; type: 'link' | 'cta' }>;
