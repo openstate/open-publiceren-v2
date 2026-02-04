@@ -29,7 +29,7 @@ Kies CSV voor het publiceren van gestructureerde, tabelmatige data zoals:
 * Let op: formules uit Excel worden niet meegenomen bij export
 
 ### Juridische context
-CSV voldoet aan de eisen van de [Wet hergebruik overheidsinformatie (Who)](/kaders/who) voor machineleesbare data. CSV is een [aanbevolen standaard](https://www.forumstandaardisatie.nl/open-standaarden/csv) van het [Forum Standaardisatie](/kaders/forum-standaardisatie) voor open data.
+CSV voldoet aan de eisen van de [Wet hergebruik overheidsinformatie (Who)](/kaders/wet-hergebruik-overheidsinformatie) voor machineleesbare data. CSV is een [aanbevolen standaard](https://www.forumstandaardisatie.nl/open-standaarden/csv) van het [Forum Standaardisatie](/kaders/forum-standaardisatie) voor open data.
 
 ### Let op
 Een spreadsheetbestand met meerdere werkbladen moet per werkblad worden geëxporteerd naar CSV. Formules en berekeningen gaan verloren bij conversie.

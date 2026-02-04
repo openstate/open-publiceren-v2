@@ -22,7 +22,7 @@ RDF is relevant voor gevorderde dataspecialisten en situaties waarin:
 - Toekomstbestendig: Basis van het semantisch web
 
 ### Juridische context
-De [Wet hergebruik overheidsinformatie (Who)](/kaders/who) en de Europese Open Data Richtlijn moedigen het publiceren van 'high value datasets' in linked data-formaat aan. RDF vertegenwoordigt het hoogste niveau (5 sterren) in het open data-model.
+De [Wet hergebruik overheidsinformatie (Who)](/kaders/wet-hergebruik-overheidsinformatie) en de Europese Open Data Richtlijn moedigen het publiceren van 'high value datasets' in linked data-formaat aan. RDF vertegenwoordigt het hoogste niveau (5 sterren) in het open data-model.
 
 ### Is RDF iets voor jou?
 RDF is bedoeld voor data-experts en ontwikkelaars. Het gebruik van RDF vraagt ook om een onderliggend kennismodel. Voor reguliere publicatie volstaat CSV of JSON. Raadpleeg bij twijfel de data-specialist van je organisatie.
