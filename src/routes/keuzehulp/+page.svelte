@@ -142,7 +142,7 @@
 
 					{#if result}
 						<p class="mb-3 text-lg font-medium">
-							Lees verder voor meer informatie over {#if result.fileTypes.length === 0}dit formaat{:else}deze
+							Lees verder over {#if result.fileTypes.length === 0}dit formaat{:else}deze
 								formaten{/if}:
 						</p>
 						<div class="flex gap-3">
