@@ -24,5 +24,5 @@ export async function load({ params }) {
 		throw error(404, 'Not found');
 	}
 
-	return await getContent({ type: params.type, slug: params.id });
+	return await getContent(params);
 }
