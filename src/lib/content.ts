@@ -7,8 +7,8 @@ export type Attributes = { title: string; description: string };
 
 const glob = import.meta.glob('$lib/content/**/*.md', { query: '?raw', import: 'default' });
 
-export async function getContent({ type, slug }: { type: ContentType; slug: string }) {
-	const path = `/src/lib/content/${type}/${slug}.md`;
+export async function getContent({ type, id }: { type: ContentType; id: string }) {
+	const path = `/src/lib/content/${type}/${id}.md`;
 	const markdown = await glob[path]();
 	const { attributes, body } = frontmatter<Attributes>(markdown as string);
 	return { attributes, body: await marked.parse(body) };
