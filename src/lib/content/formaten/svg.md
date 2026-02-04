@@ -22,6 +22,6 @@ Voeg altijd een tekstueel alternatief toe aan afbeeldingen:
 -
 ### Meer informatie
 
-- [SVG](https://www.forumstandaardisatie.nl/open-standaarden/svg) (Forum Standaardisatie)
+- [SVG-standaard](https://www.forumstandaardisatie.nl/open-standaarden/svg) (Forum Standaardisatie)
 - [Norm Voorkeursformaten](https://www.nationaalarchief.nl/archiveren/kennisbank/norm-voorkeursformaten) (Nationaal Archief)
 - [Digitoegankelijk.nl](https://www.digitoegankelijk.nl)

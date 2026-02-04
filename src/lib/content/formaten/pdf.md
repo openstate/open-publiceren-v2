@@ -52,5 +52,5 @@ Overweeg om belangrijke informatie in twee formaten te publiceren:
 
 ## Meer informatie
 
-- [PDF](https://www.forumstandaardisatie.nl/open-standaarden/pdf-nen-iso) (Forum Standaardisatie)
+- [PDF-standaard](https://www.forumstandaardisatie.nl/open-standaarden/pdf-nen-iso) (Forum Standaardisatie)
 - [Toegankelijke PDF's maken](https://www.digitoegankelijk.nl/aan-de-slag/tips/kantoorbestanden)
