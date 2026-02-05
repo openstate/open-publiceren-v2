@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import { PUBLIC_IS_WIP } from '$env/static/public';
 	import logo from '$lib/assets/logo.svg';
 	import Button from './button.svelte';
@@ -58,7 +59,9 @@
 
 		<!-- Mobile Menu -->
 		<div class="lg:hidden">
-			<input type="checkbox" id="mobile-menu" class="peer/menu absolute -left-9999" />
+			{#key page.url.pathname}
+				<input type="checkbox" id="mobile-menu" class="peer/menu absolute -left-9999" />
+			{/key}
 
 			<label
 				for="mobile-menu"
