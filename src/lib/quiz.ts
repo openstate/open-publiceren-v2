@@ -220,7 +220,7 @@ export const quiz = {
 					options: {
 						ja: {
 							result: result.data.spreadsheet_logic,
-							fileTypes: ['ods']
+							fileTypes: ['odf']
 						},
 						nee: {
 							title: 'Leesbaarheid',
