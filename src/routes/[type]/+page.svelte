@@ -3,7 +3,7 @@
 
 	let { data } = $props();
 
-	const title = data.type === 'formaten' ? 'Formaten' : 'Kaders';
+	const title = $derived(data.type === 'formaten' ? 'Formaten' : 'Kaders')
 </script>
 
 <div class="my-16">
