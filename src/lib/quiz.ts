@@ -1,3 +1,5 @@
+import { checkQuizContent } from './content';
+
 export type QuizResult = {
 	result: string;
 	fileTypes: string[];
@@ -68,11 +70,12 @@ const result = {
 			'Bij regelmatige updates van gekoppelde gegevensbronnen is het sterk aanbevolen om een API beschikbaar te stellen, zodat systemen de data automatisch kunnen ophalen wanneer het is bijgewerkt. Overweeg daarnaast publicatie als Linked Data (RDF) voor koppeling met andere bronnen op basis van betekenis. Raadpleeg dataspecialisten in jouw organisatie voor mogelijkheden en implementatie.'
 	},
 	img: {
-		vector:
-			(type: string) => `Voor ${type} raden we het formaat SVG aan. Dit is een open standaard die bij het vergroten van ${type} altijd scherp blijft.`,
+		vector: (type: string) =>
+			`Voor ${type} raden we het formaat SVG aan. Dit is een open standaard die bij het vergroten van ${type} altijd scherp blijft.`,
 		raster:
 			"Voor foto's is PNG het meest geschikte open formaat. Dit formaat behoudt de beeldkwaliteit zonder scherpteverlies door compressie.",
-		doc_check: "Je kunt de keuzehulp opnieuw doorlopen voor advies over geschikte publicatieformaten voor de tekst waar de afbeelding onderdeel van is."
+		doc_check:
+			'Je kunt de keuzehulp opnieuw doorlopen voor advies over geschikte publicatieformaten voor de tekst waar de afbeelding onderdeel van is.'
 	}
 } as const;
 
@@ -265,9 +268,7 @@ export const quiz = {
 							...questions.api,
 							options: {
 								ja: {
-									result: [result.data.complex, result.data.complex_linked_api].join(
-										' '
-									),
+									result: [result.data.complex, result.data.complex_linked_api].join(' '),
 									fileTypes: ['json', 'rdf']
 								},
 								nee: {
@@ -353,3 +354,5 @@ export const quiz = {
 		}
 	}
 } as const satisfies Quiz;
+
+checkQuizContent(quiz);

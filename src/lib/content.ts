@@ -1,5 +1,6 @@
 import frontmatter from 'front-matter';
 import { marked } from 'marked';
+import type { Quiz, QuizResult } from './quiz';
 
 export const contentTypes = ['formaten', 'kaders'] as const;
 
@@ -10,8 +11,7 @@ export type Attributes = { title: string; description: string; sorting_score?: n
 export const isContentType = (value: string): value is ContentType =>
 	contentTypes.includes(value as ContentType);
 
-const glob = import.meta.glob('$lib/content/**/*.md', { query: '?raw', import: 'default' });
-console.log(glob)
+export const glob = import.meta.glob('$lib/content/**/*.md', { query: '?raw', import: 'default' });
 
 export async function getContent({ type, id }: { type: ContentType; id: string }) {
 	const path = `/src/lib/content/${type}/${id}.md`;
@@ -34,4 +34,32 @@ export async function getAllContent({ type }: { type: ContentType }) {
 
 	// Sort by sorting_score in descending order (higher score = earlier)
 	return items.sort((a, b) => (b.sorting_score ?? 0) - (a.sorting_score ?? 0));
+}
+
+/** Checks whether all `fileTypes` in a given `quiz` have corresponding explanation pages. */
+export function checkQuizContent(quiz: Quiz) {
+	const collect = (node: Quiz | QuizResult, acc: Set<string>) => {
+		if ('fileTypes' in node) node.fileTypes.forEach((fileType) => acc.add(fileType));
+		else Object.values(node.options).forEach((child) => collect(child, acc));
+	};
+
+	const available = new Set(
+		Object.keys(glob)
+			.map((filePath) => filePath.split('/').pop())
+			.filter((fileName): fileName is string => Boolean(fileName))
+			.map((fileName) => fileName.replace(/\.md$/, ''))
+	);
+
+	const fileTypes = new Set<string>();
+	collect(quiz, fileTypes);
+
+	const missing = [...fileTypes].filter((fileType) => !available.has(fileType));
+	if (missing.length > 0) {
+		throw new Error(
+			`Missing format markdown files for: ${missing.sort().join(', ')}. ` +
+				`Add corresponding .md files in /src/lib/content/formaten/.`
+		);
+	} else {
+		console.log('Check successful: All file types in the quiz have corresponding markdown files.');
+	}
 }
