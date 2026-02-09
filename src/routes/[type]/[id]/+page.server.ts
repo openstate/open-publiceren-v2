@@ -14,7 +14,7 @@ export const entries: EntryGenerator = () => {
 export const load: PageServerLoad = async ({ params }) => {
 	if (isContentType(params.type)) {
 		const content = await getContent({ type: params.type, id: params.id });
-		if (content && content.attributes.link !== false) return { content, type: params.type };
+		if (content && content.attributes.link !== false) return content;
 	}
 
 	throw error(404, 'Not found');
