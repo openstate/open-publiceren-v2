@@ -20,7 +20,7 @@ Gebruik ODF wanneer de ontvanger het document moet kunnen bewerken. Denk aan:
 - **Open standaard**: Niet gebonden aan één leverancier
 - **Bewerkbaar**: Ontvangers kunnen het document aanpassen
 - **Toekomstbestendig**: Langdurig leesbaar en archiveerbaar
-- **Digitoegankelijk**: een ODF-document is goed digitoegankelijk te maken
+- **Digitoegankelijk**: een ODF-document is goed [digitoegankelijk](/kaders/wet-digitale-overheid) te maken
 
 ### Juridische context
 

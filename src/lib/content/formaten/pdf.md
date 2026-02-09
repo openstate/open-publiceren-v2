@@ -41,7 +41,7 @@ PDF is geschikt wanneer de exacte opmaak van een document behouden moet blijven,
 
 ### Juridische context
 
-PDF is een verplichte standaard voor de overheid en staat op de ['Pas toe of leg uit'-lijst](https://www.forumstandaardisatie.nl/open-standaarden/verplicht) van het [Forum Standaardisatie](/kaders/forum-standaardisatie). Bij publiceren dient er in ieder geval één publicatievorm digitoegankelijk te zijn volgens de Wet digitale overheid. Meestal is dat HTML of PDF. De [Wet open overheid (Woo)](/kaders/wet-open-overheid) en [Wet hergebruik overheidsinformatie (Who)](/kaders/wet-hergebruik-overheidsinformatie) moedigen aan om naast PDF ook een HTML-versie aan te bieden voor leesbaarheid en herbruikbaarheid.
+PDF is een verplichte standaard voor de overheid en staat op de ['Pas toe of leg uit'-lijst](https://www.forumstandaardisatie.nl/open-standaarden/verplicht) van het [Forum Standaardisatie](/kaders/forum-standaardisatie). Bij publiceren dient er in ieder geval één publicatievorm digitoegankelijk te zijn volgens de [Wet digitale overheid](/kaders/wet-digitale-overheid) (Wdo). Meestal is dat HTML of PDF. De [Wet open overheid](/kaders/wet-open-overheid) (Woo) en [Wet hergebruik overheidsinformatie](/kaders/wet-hergebruik-overheidsinformatie) (Who) moedigen aan om naast PDF ook een HTML-versie aan te bieden voor leesbaarheid en herbruikbaarheid.
 
 ### Tweesporenbeleid
 

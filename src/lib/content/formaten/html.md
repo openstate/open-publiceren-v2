@@ -18,7 +18,7 @@ Een webpagina biedt voordelen:
 
 ### Juridische context
 
-De [Wet open overheid (Woo)](/kaders/wet-open-overheid) en de [Wet hergebruik overheidsinformatie (Who)](/kaders/wet-hergebruik-overheidsinformatie) stimuleren het gebruik van open, toegankelijke formaten. Indien goed ingericht, voldoen webpagina's aan de eisen voor digitale toegankelijkheid (WCAG 2.1) en zijn daarmee een uitstekende keuze voor actieve openbaarmaking. HTML is een [aanbevolen standaard](https://www.forumstandaardisatie.nl/open-standaarden/html) voor de overheid van het Forum Standaardisatie.
+De [Wet open overheid (Woo)](/kaders/wet-open-overheid) en de [Wet hergebruik overheidsinformatie (Who)](/kaders/wet-hergebruik-overheidsinformatie) stimuleren het gebruik van open, toegankelijke formaten. Indien goed ingericht, voldoen webpagina's aan de eisen voor [digitale toegankelijkheid](/kaders/wet-digitale-overheid) (WCAG 2.1) en zijn daarmee een uitstekende keuze voor actieve openbaarmaking. HTML is een [aanbevolen standaard](https://www.forumstandaardisatie.nl/open-standaarden/html) voor de overheid van het Forum Standaardisatie.
 
 ### Meer informatie
 
