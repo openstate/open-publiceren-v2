@@ -29,7 +29,7 @@ De Woo verwijst naar de Who voor het formaat van te publiceren informatie. Dit b
 
 De Woo stelt dat informatie "op zodanige wijze" moet worden verstrekt dat deze "voor eenieder toegankelijk" is. Dit impliceert:
 
-- Digitale toegankelijkheid (WCAG 2.1)
+- Digitale toegankelijkheid (EN 301 549 met WCAG 2.1)
 - Open bestandsformaten
 - Vindbaarheid via zoekmachines
 
