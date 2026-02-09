@@ -97,8 +97,8 @@
 	});
 </script>
 
-<div class="my-8 lg:my-12">
-	<h1 class="mb-8 text-3xl font-semibold text-stone-800 sm:text-4xl">Keuzehulp</h1>
+<div class="my-16">
+	<h1 class="mb-6 text-3xl font-semibold text-stone-800 sm:text-4xl">Keuzehulp</h1>
 	<div class="mt-12 space-y-6">
 		{#each visibleQuestions as question (question.index)}
 			<div
