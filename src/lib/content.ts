@@ -2,11 +2,16 @@ import frontmatter from 'front-matter';
 import { marked } from 'marked';
 import type { Quiz, QuizResult } from './quiz';
 
-export const contentTypes = ['formaten', 'kaders'] as const;
+export const contentTypes = ['formaten', 'kaders', 'over-ons'] as const;
 
 export type ContentType = (typeof contentTypes)[number];
 
-export type Attributes = { title: string; description: string; sorting_score?: number };
+export type Attributes = {
+	title: string;
+	description: string;
+	sorting_score?: number;
+	link?: boolean;
+};
 
 export const isContentType = (value: string): value is ContentType =>
 	contentTypes.includes(value as ContentType);
@@ -20,7 +25,13 @@ export async function getContent({ type, id }: { type: ContentType; id: string }
 	return { attributes, body: await marked.parse(body) };
 }
 
-export async function getAllContent({ type }: { type: ContentType }) {
+export async function getAllContent({
+	type,
+	includeUnlinked
+}: {
+	type: ContentType;
+	includeUnlinked?: boolean;
+}) {
 	const items = await Promise.all(
 		Object.keys(glob)
 			.filter((path) => path.startsWith(`/src/lib/content/${type}/`))
@@ -28,12 +39,14 @@ export async function getAllContent({ type }: { type: ContentType }) {
 				const markdown = await glob[path]();
 				const id = path.split('/').pop()!.replace('.md', '');
 				const { attributes } = frontmatter<Attributes>(markdown as string);
+				if (!includeUnlinked && attributes.link === false) return null;
 				return { ...attributes, id };
 			})
 	);
 
-	// Sort by sorting_score in descending order (higher score = earlier)
-	return items.sort((a, b) => (b.sorting_score ?? 0) - (a.sorting_score ?? 0));
+	return items
+		.filter((item): item is NonNullable<(typeof items)[number]> => Boolean(item))
+		.sort((a, b) => (b.sorting_score ?? 0) - (a.sorting_score ?? 0));
 }
 
 /** Checks whether all `fileTypes` in a given `quiz` have corresponding explanation pages. */

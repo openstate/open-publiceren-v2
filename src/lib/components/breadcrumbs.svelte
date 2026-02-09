@@ -1,16 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { getTitleCase } from '$lib/util';
 	import Button from './button.svelte';
-
-	function getTitleCase(str: string) {
-		if (str.length <= 4) return str.toUpperCase();
-		return str
-			.split('-')
-			.map((w, i) =>
-				i === 0 ? w.charAt(0).toUpperCase() + w.slice(1).toLowerCase() : w.toLowerCase()
-			)
-			.join(' ');
-	}
 
 	const path = $derived(page.url.pathname.split('/').filter(Boolean));
 
@@ -36,7 +27,7 @@
 			<li>
 				<Button href="/" variant="tertiary" size="sm">Home</Button>
 				{#if segments.length > 0}
-					<span class="text-stone-400">&gt;</span>
+					<span class="text-stone-400">➞</span>
 				{/if}
 			</li>
 			{#each segments as { path, label, isLast }, index}
@@ -50,7 +41,7 @@
 						{label}
 					</Button>
 					{#if index < segments.length - 1}
-						<span class="text-stone-400">&gt;</span>
+						<span class="text-stone-400">➞</span>
 					{/if}
 				</li>
 			{/each}

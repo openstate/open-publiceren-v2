@@ -7,6 +7,7 @@ sorting_score: 40
 RDF (Resource Description Framework) is een standaard voor het beschrijven van gegevens op een manier die computers kunnen begrijpen en koppelen. Het vormt de basis voor 'Linked Data' — onderling verbonden datasets op basis van betekenis.
 
 ### Wanneer gebruik je RDF?
+
 RDF is relevant voor gevorderde dataspecialisten en situaties waarin:
 
 - Data gekoppeld moet worden aan andere bronnen
@@ -22,9 +23,11 @@ RDF is relevant voor gevorderde dataspecialisten en situaties waarin:
 - Toekomstbestendig: Basis van het semantisch web
 
 ### Juridische context
+
 De [Wet hergebruik overheidsinformatie (Who)](/kaders/wet-hergebruik-overheidsinformatie) en de Europese Open Data Richtlijn moedigen het publiceren van 'high value datasets' in linked data-formaat aan. RDF vertegenwoordigt het hoogste niveau (5 sterren) in het open data-model.
 
 ### Is RDF iets voor jou?
+
 RDF is bedoeld voor data-experts en ontwikkelaars. Het gebruik van RDF vraagt ook om een onderliggend kennismodel. Voor reguliere publicatie volstaat CSV of JSON. Raadpleeg bij twijfel de data-specialist van je organisatie.
 
 ### Meer informatie

@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { cva, type VariantProps } from 'cva';
 	import type { Snippet } from 'svelte';
-	import type { HTMLAttributes } from 'svelte/elements';
+	import type { HTMLAnchorAttributes, HTMLButtonAttributes } from 'svelte/elements';
 
 	const button = cva({
-		base: 'inline-block font-medium transition-colors cursor-pointer',
+		base: 'font-medium transition-colors cursor-pointer',
 		variants: {
 			variant: {
-				primary: 'rounded-lg bg-amber-300 text-amber-950 hover:bg-amber-400',
-				secondary: 'rounded-lg border ',
+				primary: 'inline-block rounded-lg bg-amber-300 text-amber-950 hover:bg-amber-400',
+				secondary: 'inline-block rounded-lg border ',
 				tertiary: 'rounded text-amber-700 hover:text-amber-900'
 			},
 			size: { sm: 'text-base', md: 'text-lg', lg: 'text-xl' },
@@ -38,13 +38,13 @@
 		}
 	});
 
-	type Props = {
+	type Props = ({
 		href?: string;
 		class?: string;
 		children?: Snippet;
 		selected?: boolean;
-	} & VariantProps<typeof button> &
-		(HTMLAttributes<HTMLButtonElement> | HTMLAttributes<HTMLAnchorElement>);
+	} & VariantProps<typeof button>) &
+		(HTMLButtonAttributes | HTMLAnchorAttributes);
 
 	let {
 		href = undefined,

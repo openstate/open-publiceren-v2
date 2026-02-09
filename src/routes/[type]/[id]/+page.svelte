@@ -7,7 +7,7 @@
 		{data.attributes.title}
 	</h1>
 
-	<div class="prose prose-neutral max-w-[80ch]">
+	<div class="prose max-w-[80ch] prose-neutral">
 		{@html data.body}
 	</div>
 </article>

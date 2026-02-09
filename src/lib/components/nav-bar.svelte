@@ -7,7 +7,7 @@
 	const items = [
 		{ href: '/formaten', label: 'hoe open publiceren', type: 'link' },
 		{ href: '/kaders', label: 'waarom open publiceren', type: 'link' },
-		{ href: '/#over-ons', label: 'over ons', type: 'link' },
+		{ href: '/over-ons', label: 'over ons', type: 'link' },
 		{ href: '/keuzehulp', label: 'keuzehulp', type: 'cta' }
 	] satisfies Array<{ href: string; label: string; type: 'link' | 'cta' }>;
 </script>

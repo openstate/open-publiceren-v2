@@ -1,21 +1,21 @@
 import { error } from '@sveltejs/kit';
 import { getAllContent, getContent, isContentType, contentTypes } from '$lib/content';
+import type { PageServerLoad, EntryGenerator } from './$types';
 
-export const entries = async () => {
-	const [formaten, kaders] = await Promise.all(
-		contentTypes.map((type) => getAllContent({ type }))
-	);
-
-	return [
-		...formaten.map(({ id }) => ({ type: 'formaten', id })),
-		...kaders.map(({ id }) => ({ type: 'kaders', id }))
-	];
+export const entries: EntryGenerator = () => {
+	return Promise.all(
+		contentTypes.map(async (type) => {
+			const items = await getAllContent({ type });
+			return items.map((item) => ({ type, id: item.id }));
+		})
+	).then((arrays) => arrays.flat());
 };
 
-export async function load({ params }) {
-	if (!isContentType(params.type)) {
-		throw error(404, 'Not found');
+export const load: PageServerLoad = async ({ params }) => {
+	if (isContentType(params.type)) {
+		const content = await getContent({ type: params.type, id: params.id });
+		if (content && content.attributes.link !== false) return { content, type: params.type };
 	}
 
-	return await getContent(params);
-}
+	throw error(404, 'Not found');
+};
