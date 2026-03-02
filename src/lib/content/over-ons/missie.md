@@ -8,7 +8,7 @@ Open Publiceren draagt bij aan een open en toegankelijke informatievoorziening v
 
 ### Open en transparante overheid
 
-Een open en transparante overheid zorgt ervoor dat overheidsinformatie of -data online vindbaar zijn, digitaal toegankelijk, herbruikbaar èn in een open bestandsformaat. Dat draagt bij aan democratische controle en journalistiek hergebruik, maar ook aan waardecreatie zoals in hergebruik voor kunst en cultuur of in economisch hergebruik.
+Een open en transparante overheid zorgt ervoor dat overheidsinformatie en -data online vindbaar zijn, digitaal toegankelijk, herbruikbaar èn in een open bestandsformaat. Dat draagt bij aan democratische controle en journalistiek hergebruik, maar ook aan waardecreatie zoals in hergebruik voor kunst en cultuur of in economisch hergebruik.
 
 ### Informatie- en publicatiestrategie voor bestandsformaten
 

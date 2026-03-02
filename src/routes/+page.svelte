@@ -13,9 +13,10 @@
 	<div class="max-w-4xl">
 		<h1 class="mt-2 mb-8 text-4xl font-semibold text-stone-800 sm:text-5xl">Open Publiceren</h1>
 		<p class="mb-8 text-lg text-balance lg:text-xl">
-			De overheid publiceert dagelijks grote hoeveelheden informatie. Welk bestandsformaat past bij
-			welk soort informatie? En wat zegt relevante wet- en regelgeving hierover? Open Publiceren is
-			een praktische keuzehulp bij het kiezen van het juiste bestandsformaat.
+			De overheid publiceert dagelijks grote hoeveelheden informatie. Open Publiceren helpt bij het
+			kiezen van het juiste bestandsformaat voor verschillende soorten overheidsinformatie. De
+			keuzehulp sluit aan op relevante wet- en regelgeving en ondersteunt bij het vindbaar,
+			toegankelijk, uitwisselbaar en herbruikbaar publiceren van informatie.
 		</p>
 		<div class="flex gap-4 text-center max-xs:flex-col xs:items-center">
 			<Button href="/keuzehulp">start keuzehulp</Button>
@@ -30,11 +31,9 @@
 	<div>
 		<h2 class="mb-6 text-2xl font-medium text-stone-800 lg:text-3xl">Keuzehulp</h2>
 		<p class="mb-6 text-lg text-balance lg:max-w-2xl">
-			Bepaal welke bestandsformaten nodig zijn voor het open publiceren van overheidsinformatie en
-			-data. Via een serie korte vragen ontvang je advies welk bestandsformaat het meest geschikt is
-			om informatie of data te publiceren. Deze adviezen sluiten aan op relevante wet- en
-			regelgeving. Zo wordt informatie uitwisselbaar, toegankelijk en herbruikbaar. Zowel voor mens
-			als machine.
+			Ontdek welk bestandsformaat het meest geschikt is voor jouw informatie of data. Beantwoord
+			enkele korte vragen en ontvang direct een advies dat aansluit op wet- en regelgeving. Zo
+			publiceer je informatie die bruikbaar is voor zowel mens als machine.
 		</p>
 		<Button href="/keuzehulp" variant="tertiary">start keuzehulp ➞</Button>
 	</div>
@@ -54,8 +53,8 @@
 		Hoe kan ik Open Publiceren?
 	</h2>
 	<p class="mb-6 max-w-4xl text-lg text-balance">
-		Welke bestandsformaten kan ik gebruiken bij het open publiceren? En welk bestandsformaat past
-		het beste bij mijn soort informatie? Bekijk het overzicht van bestandsformaten.
+		Wil je zelf verkennen welke bestandsformaten je kunt gebruiken? Bekijk het overzicht met
+		aanbevolen formaten voor het open publiceren van overheidsinformatie en data.
 	</p>
 	<div class="relative -mx-4 mb-6">
 		<div class="flex snap-x snap-mandatory items-stretch gap-4 overflow-x-scroll px-4 py-2">

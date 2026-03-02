@@ -12,8 +12,8 @@
 	<div class="mb-12 max-w-4xl space-y-4 text-lg text-balance">
 		{#if data.type === 'formaten'}
 			<p>
-				Welke bestandsformaten kan ik gebruiken bij het open publiceren? En welk bestandsformaat
-				past het beste bij mijn soort informatie? Bekijk het overzicht van bestandsformaten.
+				Welke bestandsformaten kan ik gebruiken bij het open publiceren? Bekijk het overzicht van
+				bestandsformaten.
 			</p>
 		{:else if data.type === 'kaders'}
 			<p>

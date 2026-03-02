@@ -1,11 +1,11 @@
 ---
 title: CSV
-description: Een eenvoudig en machineleesbaar formaat voor tabelgegevens. Elke regel is een rij in een spreadsheet en elke komma scheidt een kolom.
+description: Een eenvoudig en machineleesbaar formaat voor tabelgegevens. Elke regel is een rij in een spreadsheet en scheidingstekens bepalen de kolommen.
 sorting_score: 85
 category: Data
 ---
 
-CSV (Comma Separated Values) is een eenvoudig tekstformaat voor tabelgegevens. Elke regel is een rij in een spreadsheet en elke komma scheidt een kolom. CSV-bestanden kun je openen in spreadsheetprogramma’s of speciale data-software.
+CSV (Comma Separated Values) is een eenvoudig tekstformaat voor tabelgegevens. Elke regel is een rij in een spreadsheet en en scheidingstekens (vaak een komma) bepalen de kolommen. CSV-bestanden kun je openen in spreadsheetprogramma’s of speciale data-software.
 
 ### Wanneer gebruik je CSV?
 
@@ -31,8 +31,6 @@ CDA,4,tegen
 FvD,2,tegen
 Onafhankelijk,2,onthouding
 ```
-
-Elke regel is een rij, elk scheidingsteken (een komma) scheidt een kolom. De eerste regel bevat de kolomnamen.
 
 ### Voordelen
 

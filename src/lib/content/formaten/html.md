@@ -1,6 +1,6 @@
 ---
 title: HTML
-description: Publiceer informatie als webpagina die direct leesbaar is. Toegankelijk, vindbaar voor zoekmachines, mobiel-vriendelijk en beter dan PDF voor online lezen.
+description: Publiceer informatie als webpagina die direct leesbaar is. Toegankelijk, vindbaar voor zoekmachines, mobiel-vriendelijk en over het algemeen beter dan PDF voor online lezen.
 sorting_score: 95
 category: Documenten
 ---

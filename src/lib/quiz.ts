@@ -70,8 +70,8 @@ const result = {
 			'Bij regelmatige updates van gekoppelde gegevensbronnen is het sterk aanbevolen om een API beschikbaar te stellen, zodat systemen de data automatisch kunnen ophalen wanneer het is bijgewerkt. Overweeg daarnaast publicatie als Linked Data (RDF) voor koppeling met andere bronnen op basis van betekenis. Raadpleeg dataspecialisten in jouw organisatie voor mogelijkheden en implementatie.'
 	},
 	img: {
-		vector: (type: string) =>
-			`Voor ${type} raden we het formaat SVG aan. Dit is een open standaard die bij het vergroten van ${type} altijd scherp blijft.`,
+		vector:
+			'Voor illustraties, infographics en diagrammen raden we het formaat SVG aan. Dit is een open standaard die bij het vergroten altijd scherp blijft.',
 		raster:
 			"Voor foto's is PNG het meest geschikte open formaat. Dit formaat behoudt de beeldkwaliteit zonder scherpteverlies door compressie.",
 		doc_check:
@@ -217,7 +217,7 @@ export const quiz = {
 			question:
 				'Zijn de gegevens tabelvormig, dus enkel met rijen en kolommen? Of zijn de gegevens complexer gestructureerd?',
 			options: {
-				'ja, tabelvorm': {
+				tabelvorm: {
 					title: 'Diagrammen en formules',
 					question: 'Bevat de tabel diagrammen of formules?',
 					options: {
@@ -260,7 +260,7 @@ export const quiz = {
 						}
 					}
 				},
-				'nee, complexer': {
+				complexer: {
 					title: 'Linked data',
 					question: 'Zijn de gegevens onderling verbonden aan andere gegevensbronnen?',
 					options: {
@@ -298,45 +298,6 @@ export const quiz = {
 			title: 'Soort afbeelding',
 			question: 'Wat voor soort afbeelding ga je publiceren?',
 			options: {
-				illustratie: {
-					...questions.partOfText,
-					options: {
-						ja: {
-							result: [result.img.vector('illustraties'), result.img.doc_check].join(' '),
-							fileTypes: ['svg']
-						},
-						nee: {
-							result: result.img.vector('illustraties'),
-							fileTypes: ['svg']
-						}
-					}
-				},
-				infographic: {
-					...questions.partOfText,
-					options: {
-						ja: {
-							result: [result.img.vector('infographics'), result.img.doc_check].join(' '),
-							fileTypes: ['svg']
-						},
-						nee: {
-							result: result.img.vector('infographics'),
-							fileTypes: ['svg']
-						}
-					}
-				},
-				diagram: {
-					...questions.partOfText,
-					options: {
-						ja: {
-							result: [result.img.vector('diagrammen'), result.img.doc_check].join(' '),
-							fileTypes: ['svg']
-						},
-						nee: {
-							result: result.img.vector('diagrammen'),
-							fileTypes: ['svg']
-						}
-					}
-				},
 				foto: {
 					...questions.partOfText,
 					options: {
@@ -347,6 +308,19 @@ export const quiz = {
 						nee: {
 							result: result.img.raster,
 							fileTypes: ['png']
+						}
+					}
+				},
+				illustratie: {
+					...questions.partOfText,
+					options: {
+						ja: {
+							result: [result.img.vector, result.img.doc_check].join(' '),
+							fileTypes: ['svg']
+						},
+						nee: {
+							result: result.img.vector,
+							fileTypes: ['svg']
 						}
 					}
 				}

@@ -23,15 +23,6 @@ De Archiefwet geeft aan dat er een "voorkeur" bestaat voor bepaalde bestandsform
 - **DUTO-principes**: Eisen aan duurzaam toegankelijke overheidsinformatie
 - **Norm Voorkeursformaten**: Advies over welke formaten geschikt zijn voor archivering
 
-### Voorkeursformaten voor archivering
-
-| Type        | Voorkeursformaat                             |
-| :---------- | :------------------------------------------- |
-| Tekst       | [ODT](/formaten/odf), [PDF/A](/formaten/pdf) |
-| Spreadsheet | [ODS](/formaten/odf), [CSV](/formaten/csv)   |
-| Presentatie | [ODP](/formaten/odf)                         |
-| Afbeelding  | PNG, JPEG, TIFF                              |
-
 ### Open by design
 
 Een belangrijke les uit de praktijk: begin met open standaarden bij het maken van documenten, niet pas bij het archiveren. Conversie achteraf kan leiden tot verlies van informatie, opmaak of structuur.
