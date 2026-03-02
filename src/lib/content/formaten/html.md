@@ -24,4 +24,4 @@ De [Wet open overheid (Woo)](/kaders/wet-open-overheid) en de [Wet hergebruik ov
 ### Meer informatie
 
 - [HTML-standaard](https://www.forumstandaardisatie.nl/open-standaarden/html) (Forum Standaardisatie)
-- [Digitoegankelijk.nl \- WCAG 2.1](https://www.digitoegankelijk.nl)
+- [Digitoegankelijk.nl - WCAG 2.1](https://www.digitoegankelijk.nl)
