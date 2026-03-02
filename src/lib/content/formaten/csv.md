@@ -16,6 +16,24 @@ Kies CSV voor het publiceren van gestructureerde, tabelmatige data zoals:
 - Open data voor hergebruik
 - Exportgegevens uit databases
 
+### Voorbeeld: stemuitslag gemeenteraad
+
+Zo ziet een CSV-bestand eruit — in dit geval de uitslag van een raadsstemming:
+
+```csv
+fractie,stemmen,standpunt
+GroenLinks,8,voor
+D66,6,voor
+PvdA,5,voor
+SP,4,voor
+VVD,6,tegen
+CDA,4,tegen
+FvD,2,tegen
+Onafhankelijk,2,onthouding
+```
+
+Elke regel is een rij, elk scheidingsteken (een komma) scheidt een kolom. De eerste regel bevat de kolomnamen.
+
 ### Voordelen
 
 - **Eenvoudig**: Pure data zonder opmaak

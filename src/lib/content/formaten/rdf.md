@@ -16,6 +16,35 @@ RDF is relevant voor gevorderde dataspecialisten en situaties waarin:
 - Semantische betekenis belangrijk is
 - Data gepubliceerd wordt op data.overheid.nl
 
+### Voorbeeld: stemuitslag gemeenteraad
+
+Zo ziet RDF eruit — in dit geval de uitslag van een raadsstemming, beschreven in de [Turtle-serialisatie](<https://nl.wikipedia.org/wiki/Turtle_(syntaxis)>) van RDF:
+
+```turtle
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+<https://gemeente.nl/stemmingen/2024-GR-0142>
+  a schema:VoteAction ;
+  dct:subject "Motie duurzame mobiliteit binnenstad" ;
+  dct:date "2024-11-14"^^xsd:date ;
+  schema:result "aangenomen" .
+
+<https://gemeente.nl/stemmingen/2024-GR-0142/groenlinks>
+  a schema:VoteAction ;
+  schema:object <https://gemeente.nl/stemmingen/2024-GR-0142> ;
+  schema:agent <https://gemeente.nl/fracties/groenlinks> ;
+  schema:result "voor" ;
+  schema:voteCount 8 .
+
+<https://gemeente.nl/fracties/groenlinks>
+  a schema:Organization ;
+  schema:name "GroenLinks" .
+```
+
+Dit voorbeeld toont hoe RDF gegevens beschrijft als relaties. Turtle is een van de manieren om RDF op te schrijven. Andere veelgebruikte serialisaties zijn RDF/XML, JSON-LD en N-Triples.
+
 ### Voordelen
 
 - Verbonden: Data wordt onderdeel van een groter geheel
