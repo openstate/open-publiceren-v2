@@ -1,5 +1,16 @@
 import frontmatter from 'front-matter';
 import { marked } from 'marked';
+
+marked.use({
+	renderer: {
+		link({ href, title, text }) {
+			const titleAttr = title ? ` title="${title}"` : '';
+			if (href.startsWith('/')) return `<a href="${href}"${titleAttr}>${text}</a>`;
+			return `<a href="${href}"${titleAttr} target="_blank" rel="noopener noreferrer">${text}</a>`;
+		}
+	}
+});
+
 import type { Quiz, QuizResult } from './quiz';
 
 export const contentTypes = ['formaten', 'kaders', 'over-ons'] as const;
