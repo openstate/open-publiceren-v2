@@ -2,6 +2,7 @@
 title: ODF
 description: Een open standaard voor teksten, spreadsheets en presentaties. Gebruik dit wanneer ontvangers het document moeten kunnen bewerken.
 sorting_score: 100
+category: Documenten
 ---
 
 ODF (Open Document Format) is een open standaard voor het creëren en bewerken van documenten. Het bekendste ODF-formaat is ODT voor tekstdocumenten — de open tegenhanger van DOCX. Daarnaast bestaan er ODF-varianten voor o.a. spreadsheets (ODS, vergelijkbaar met XLSX) en presentaties (ODP, vergelijkbaar met PPTX).

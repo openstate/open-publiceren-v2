@@ -34,7 +34,14 @@
 	<div class="grid gap-6 md:grid-cols-2 lg:gap-8">
 		{#each data.items as item}
 			<div class="flex flex-col rounded-lg border border-stone-300 bg-white p-6">
-				<h2 class="mb-4 text-xl font-medium text-stone-800">{item.title}</h2>
+				<div class="mb-4 flex items-center gap-4">
+					<h3 class="text-xl font-medium">{item.title}</h3>
+					{#if item.category}
+						<p class="rounded bg-amber-200 px-2 py-1 text-sm text-amber-800">
+							{item.category}
+						</p>
+					{/if}
+				</div>
 				<p class="mb-6 grow text-stone-700">{item.description}</p>
 				{#if item.link !== false}
 					<Button href="/{data.type}/{item.id}" variant="tertiary" size="md" class="mt-4">

@@ -64,7 +64,12 @@
 					class="min-h-65 w-74 shrink-0 snap-start scroll-mx-4 rounded-lg border border-stone-300 bg-white p-6"
 				>
 					<div class="flex h-full flex-col">
-						<h3 class="mb-4 text-xl font-medium">{formaat.title}</h3>
+						<div class="mb-4 flex items-center gap-4">
+							<h3 class="text-xl font-medium">{formaat.title}</h3>
+							<p class="rounded bg-amber-200 px-2 py-1 text-sm text-amber-800">
+								{formaat.category}
+							</p>
+						</div>
 						<p class="grow">{formaat.description}</p>
 						<Button href="/formaten/{formaat.id}" variant="tertiary" size="md" class="mt-4">
 							lees meer ➞

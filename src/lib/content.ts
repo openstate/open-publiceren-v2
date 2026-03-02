@@ -11,6 +11,7 @@ export type Attributes = {
 	description: string;
 	sorting_score?: number;
 	link?: boolean;
+	category?: string;
 };
 
 export const isContentType = (value: string): value is ContentType =>

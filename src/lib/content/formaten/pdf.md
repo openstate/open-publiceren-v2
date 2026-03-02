@@ -2,6 +2,7 @@
 title: PDF
 description: Behoudt de exacte opmaak en lay-out op elk apparaat. Geschikt voor officiele documenten, archivering en afdrukken. Voor duurzame toegankelijkheid PDF/A-1a of PDF/A-2a gebruiken.
 sorting_score: 90
+category: Documenten
 ---
 
 PDF (Portable Document Format) is een formaat voor documenten met een vaste opmaak. Bewerkbare documenten kunnen worden omgezet naar een gefixeerde PDF voor publicatie of voor archivering. Een PDF ziet er op elk apparaat hetzelfde uit en is geschikt voor afdrukken.

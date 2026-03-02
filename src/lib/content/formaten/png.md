@@ -2,6 +2,7 @@
 title: PNG
 description: Een verliesvrij afbeeldingsformaat, geschikt voor foto's en afbeeldingen met transparantie of scherpe lijnen.
 sorting_score: 60
+category: Afbeeldingen
 ---
 
 PNG (Portable Network Graphics) is een verliesvrij rasterformaat. Omdat PNG geen kwaliteitsverlies kent is het geschikt voor afbeeldingen die exact moeten blijven.

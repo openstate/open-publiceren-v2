@@ -2,6 +2,7 @@
 title: SVG
 description: Een open standaard voor schaalbare vectorafbeeldingen. Ideaal voor infographics, grafieken en illustraties.
 sorting_score: 55
+category: Afbeeldingen
 ---
 
 SVG (Scalable Vector Graphics) is een open standaard voor vectorafbeeldingen. SVG-afbeeldingen blijven scherp bij elke schaalgrootte en de tekst erin is selecteerbaar en doorzoekbaar.

@@ -1,7 +1,8 @@
 ---
-title: RDF / Linked Data
+title: RDF
 description: Een standaard voor het beschrijven van gegevens zodat machines relaties kunnen begrijpen. Vormt de basis voor 'Linked Data' — onderling verbonden datasets.
 sorting_score: 40
+category: Data
 ---
 
 RDF (Resource Description Framework) is een standaard voor het beschrijven van gegevens op een manier die computers kunnen begrijpen en koppelen. Het vormt de basis voor 'Linked Data' — onderling verbonden datasets op basis van betekenis.
