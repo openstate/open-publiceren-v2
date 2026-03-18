@@ -5,7 +5,7 @@ sorting_score: 60
 category: Afbeeldingen
 ---
 
-PNG (Portable Network Graphics) is een verliesvrij rasterformaat. Omdat PNG geen kwaliteitsverlies kent is het geschikt voor afbeeldingen die exact moeten blijven.
+PNG (Portable Network Graphics) is een verliesvrij rasterformaat. Omdat PNG geen kwaliteitsverlies kent bij compressie, is het geschikt voor afbeeldingen die exact moeten blijven.
 
 ### Wanneer gebruik je PNG?
 

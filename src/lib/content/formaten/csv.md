@@ -5,7 +5,7 @@ sorting_score: 85
 category: Data
 ---
 
-CSV (Comma Separated Values) is een eenvoudig tekstformaat voor tabelgegevens. Elke regel is een rij in een spreadsheet en en scheidingstekens (vaak een komma) bepalen de kolommen. CSV-bestanden kun je openen in spreadsheetprogramma’s of speciale data-software.
+CSV (Comma Separated Values) is een eenvoudig tekstformaat voor tabelgegevens. Elke regel is een rij in een spreadsheet en scheidingstekens (vaak een komma) bepalen de kolommen. CSV-bestanden kun je openen in spreadsheetprogramma’s of speciale data-software.
 
 ### Wanneer gebruik je CSV?
 

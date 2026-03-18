@@ -5,15 +5,15 @@ sorting_score: 95
 category: Documenten
 ---
 
-Wanneer we spreken over 'publiceren in HTML', bedoelen we: maak een webpagina van de inhoud die je wilt publiceren. HTML is de technische basis van elke webpagina, maar als gebruiker hoef je daar niet over na te denken. Het gaat erom dat je informatie direct op je website plaatst als leesbare pagina — in plaats van als downloadbaar bestand zoals een [PDF](/formaten/pdf) of [EPUB](/formaten/epub).
+Wanneer we spreken over 'publiceren in HTML', bedoelen we: maak een webpagina van de inhoud die je wilt publiceren. HTML is de technische basis van elke webpagina, maar als gebruiker hoef je daar niet over na te denken. Het gaat erom dat je informatie direct op je website plaatst als leesbare pagina, in plaats van als downloadbaar bestand zoals een [PDF](/formaten/pdf) of [EPUB](/formaten/epub).
 
-### Waarom een webpagina in plaats van een PDF?
+### Waarom een webpagina?
 
 Een webpagina biedt voordelen:
 
 - **Direct leesbaar**: Geen download van een bestand nodig, de lezer kan meteen aan de slag
 - **Toegankelijk**: Werkt goed met voorleessoftware voor mensen met een visuele beperking
-- **Vindbaar**: Zoekmachines zoals Google indexeren webpagina's beter dan PDF's
+- **Vindbaar**: HTML is over het algemeen beter vindbaar en indexeerbaar dan PDF
 - **Mobiel-vriendelijk**: De tekst past zich aan elk schermformaat aan (een PDF niet)
 - **Machineleesbaar**: AI-toepassingen en data-analyse kunnen de inhoud goed verwerken
 

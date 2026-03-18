@@ -25,11 +25,11 @@ const questions = {
 	},
 	online: {
 		title: 'Online leesbaar',
-		question: 'Dient het document goed leesbaar te zijn vanuit browsers?'
+		question: 'Dient het document goed leesbaar te zijn direct in de browser?'
 	},
 	partOfText: {
 		title: 'Onderdeel van tekst',
-		question: 'Is de afbeelding onderdeel van een tekst?'
+		question: 'Is de afbeelding ingevoegd in een tekst of document?'
 	}
 } as const satisfies Record<string, QuizQuestion>;
 
@@ -85,7 +85,7 @@ export const quiz = {
 	options: {
 		'tekst & documenten': {
 			title: 'Formeel publiceren',
-			question: 'Dient het document formeel vastgelegd of gearchiveerd te worden?',
+			question: 'Dient het document formeel vastgesteld, vastgelegd of gearchiveerd te worden?',
 			options: {
 				ja: {
 					...questions.online,

@@ -14,7 +14,6 @@ RDF is relevant voor gevorderde dataspecialisten en situaties waarin:
 - Data gekoppeld moet worden aan andere bronnen
 - Gegevens onderdeel worden van een kennisgraaf
 - Semantische betekenis belangrijk is
-- Data gepubliceerd wordt op data.overheid.nl
 
 ### Voorbeeld: stemuitslag gemeenteraad
 

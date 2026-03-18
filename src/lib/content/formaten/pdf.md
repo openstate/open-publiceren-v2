@@ -5,7 +5,7 @@ sorting_score: 90
 category: Documenten
 ---
 
-PDF (Portable Document Format) is een formaat voor documenten met een vaste opmaak. Bewerkbare documenten kunnen worden omgezet naar een gefixeerde PDF voor publicatie of voor archivering. Een PDF ziet er op elk apparaat hetzelfde uit en is geschikt voor afdrukken.
+PDF (Portable Document Format) is een formaat voor documenten met een vaste opmaak. Bewerkbare documenten kunnen worden omgezet naar een gefixeerde PDF voor publicatie of voor archivering. Een PDF ziet er op elk apparaat hetzelfde uit en is geschikt voor officiële documenten en afdrukken.
 
 ### Wanneer gebruik je PDF?
 
@@ -20,6 +20,8 @@ PDF is geschikt wanneer de exacte opmaak van een document behouden moet blijven,
 
 ### PDF-versies: welke kies je?
 
+Publiceer je een document als PDF, zet dan het bewerkbare document om uit je tekstverwerker via 'exporteren' en kies daarbij de juiste PDF-versie:
+
 | Versie                          | Gebruik                                     |
 | :------------------------------ | :------------------------------------------ |
 | **PDF/A-1a of PDF/A-2a**        | Voor archivering én toegankelijkheid        |
@@ -32,7 +34,7 @@ PDF is geschikt wanneer de exacte opmaak van een document behouden moet blijven,
 
 - Vaste opmaak blijft behouden
 - Universeel te openen, via bv. een webbrowser
-- Geschikt voor archivering (PDF/A)
+- Geschikt voor officiële documenten en afdrukken
 
 ### Minpunten
 
@@ -40,9 +42,13 @@ PDF is geschikt wanneer de exacte opmaak van een document behouden moet blijven,
 - Niet eenvoudig bewerkbaar
 - Toegankelijkheid vereist veelal gespecialiseerde kennis en aandacht
 
+### Denk om machineleesbaarheid van je PDF
+
+Via 'exporteren' van je bewerkbare document in je tekstverwerker maak je een digital-born PDF. Digital-born PDF's zijn sowieso machineleesbaar. Zij hebben voorkeur boven PDF's die na het scannen van een print via Optical Character Recognition (OCR) machineleesbaar zijn gemaakt.
+
 ### Juridische context
 
-PDF is een verplichte standaard voor de overheid en staat op de ['Pas toe of leg uit'-lijst](https://www.forumstandaardisatie.nl/open-standaarden/verplicht) van het [Forum Standaardisatie](/kaders/forum-standaardisatie). Bij publiceren dient er in ieder geval één publicatievorm digitoegankelijk te zijn volgens de [Wet digitale overheid](/kaders/wet-digitale-overheid) (Wdo). Meestal is dat HTML of PDF. De [Wet open overheid](/kaders/wet-open-overheid) (Woo) en [Wet hergebruik overheidsinformatie](/kaders/wet-hergebruik-overheidsinformatie) (Who) moedigen aan om naast PDF ook een HTML-versie aan te bieden voor leesbaarheid en herbruikbaarheid.
+PDF (PDF 1.7, PDF/A-1 en PDF/A-2) is een verplichte standaard voor de overheid en staat op de ['Pas toe of leg uit'-lijst](https://www.forumstandaardisatie.nl/open-standaarden/verplicht) van het [Forum Standaardisatie](/kaders/forum-standaardisatie). PDF/UA is een [aanbevolen standaard](https://www.forumstandaardisatie.nl/open-standaarden/pdfua) van het [Forum Standaardisatie](/kaders/forum-standaardisatie). Bij publiceren dient er in ieder geval één publicatievorm digitoegankelijk te zijn volgens de [Wet digitale overheid](/kaders/wet-digitale-overheid) (Wdo). Meestal is dat HTML of PDF. De [Wet open overheid](/kaders/wet-open-overheid) (Woo) en [Wet hergebruik overheidsinformatie](/kaders/wet-hergebruik-overheidsinformatie) (Who) moedigen aan om naast PDF ook een HTML-versie aan te bieden voor leesbaarheid en herbruikbaarheid.
 
 ### Tweesporenbeleid
 
@@ -53,5 +59,6 @@ Overweeg om belangrijke informatie in twee formaten te publiceren:
 
 ## Meer informatie
 
-- [PDF-standaard](https://www.forumstandaardisatie.nl/open-standaarden/pdf-nen-iso) (Forum Standaardisatie)
+- [PDF](https://www.forumstandaardisatie.nl/open-standaarden/pdf-nen-iso) (Forum Standaardisatie)
+- [PDF/UA](https://www.forumstandaardisatie.nl/open-standaarden/pdfua) (aanbevolen standaard Forum Standaardisatie)
 - [Toegankelijke PDF's maken](https://www.digitoegankelijk.nl/aan-de-slag/tips/kantoorbestanden)

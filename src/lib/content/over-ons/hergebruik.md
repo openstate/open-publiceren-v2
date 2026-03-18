@@ -1,5 +1,5 @@
 ---
-title: Auteursrecht
+title: Hergebruik
 description: De inhoud van deze website is toegewezen aan het publiek domein (CC0 1.0), tenzij anders vermeld. De broncode is open source.
 sorting_score: 70
 ---

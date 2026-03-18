@@ -41,4 +41,5 @@ De Who geeft de voorkeur aan:
 ### Meer informatie
 
 - [Wet hergebruik overheidsinformatie](https://wetten.overheid.nl/BWBR0036795) (wettekst)
+- [Handleiding Herziene Wet hergebruik van overheidsinformatie](https://www.open-overheid.nl/documenten/2024/08/02/handleiding-herziene-who) (Open Overheid)
 - [data.overheid.nl](https://data.overheid.nl)

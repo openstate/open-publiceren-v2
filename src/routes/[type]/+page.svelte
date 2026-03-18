@@ -26,6 +26,11 @@
 				Open Publiceren volgt huidige wet- en regelgeving.
 			</p>
 			<p>
+				Bestandsformaten zijn niet neutraal. Zij bepalen hoe toegankelijk, herbruikbaar en
+				controleerbaar overheidsinformatie is. De keuzehulp Open Publiceren helpt daarom bij het
+				maken van de juiste keuze.
+			</p>
+			<p>
 				<Credits />
 			</p>
 		{/if}
