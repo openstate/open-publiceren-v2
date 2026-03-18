@@ -54,7 +54,7 @@
 	</h2>
 	<p class="mb-6 max-w-4xl text-lg text-balance">
 		Wil je zelf verkennen welke bestandsformaten je kunt gebruiken? Bekijk het overzicht met
-		aanbevolen formaten voor het open publiceren van overheidsinformatie en data.
+		formaten voor het open publiceren van overheidsinformatie en data.
 	</p>
 	<div class="relative -mx-4 mb-6">
 		<div class="flex snap-x snap-mandatory items-stretch gap-4 overflow-x-scroll px-4 py-2">
