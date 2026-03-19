@@ -11,11 +11,17 @@ export const GET: RequestHandler = async () => {
 		})
 	).then((arrays) => arrays.flat());
 
-	return await sitemap.response({
+	const response = await sitemap.response({
 		origin: CORS_ORIGIN,
 		paramValues: {
 			'/[type]': contentTypes as unknown as string[],
 			'/[type]/[id]': content
 		}
 	});
+
+	const xml = await response.text();
+	const stylesheet = '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>';
+	const body = xml.replace(/(<\?xml[^?]*\?>)/, `$1\n${stylesheet}`);
+
+	return new Response(body, { headers: response.headers });
 };
