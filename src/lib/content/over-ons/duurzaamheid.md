@@ -12,6 +12,6 @@ Deze website Open Publiceren is daarom zo lichtgewicht mogelijk gebouwd. De webs
 
 
 - Energielabel **A+**
-- Gemiddeld **0,045 g CO<sub>2</sub>** per pagina
-- Gemiddeld **125,56 kB** per pagina
-- <a data-sveltekit-reload href="/sitemap.xml">21 pagina’s</a> doorgemeten
+- Gemiddeld **0,054 g CO<sub>2</sub>** per pagina
+- Gemiddeld **150,52 kB** per pagina
+- <a data-sveltekit-reload href="/sitemap.xml">23 pagina’s</a> doorgemeten
