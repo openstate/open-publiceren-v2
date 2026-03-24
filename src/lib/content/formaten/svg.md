@@ -20,7 +20,6 @@ Voeg altijd een tekstueel alternatief toe aan afbeeldingen:
 
 - **Alt-tekst**: Korte beschrijving van de afbeelding
 - **Longdesc**: Uitgebreide beschrijving voor complexe afbeeldingen
--
 
 ### Meer informatie
 
