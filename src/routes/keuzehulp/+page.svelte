@@ -1,9 +1,31 @@
 <script lang="ts">
 	import { quiz, type Quiz, type QuizResult } from '$lib/quiz';
 	import Button from '$lib/components/button.svelte';
-	import { onMount } from 'svelte';
+	import { page } from '$app/state';
+	import type { Snapshot } from './$types';
 
-	let history = $state<string[]>([]);
+	const asStringArray = (value: unknown): string[] =>
+		Array.isArray(value) ? value.filter((item): item is string => typeof item === 'string') : [];
+
+	function getHistoryFromUrl() {
+		const historyParam = page.url.searchParams.get('h');
+		if (!historyParam) return [];
+
+		try {
+			const parsed = JSON.parse(atob(historyParam));
+			return asStringArray(parsed);
+		} catch (e) {
+			console.error('Failed to parse history from URL', e);
+			return [];
+		}
+	}
+
+	let history = $state(getHistoryFromUrl());
+
+	export const snapshot = {
+		capture: () => history,
+		restore: (value) => (history = asStringArray(value))
+	} satisfies Snapshot<string[]>;
 
 	const traversal = $derived.by(() => {
 		let current: Quiz | QuizResult = quiz;
@@ -59,21 +81,30 @@
 
 	let shareButtonText = $state('Advies delen');
 
+	function getHistoryLink() {
+		const url = new URL(page.url);
+		if (history.length === 0) {
+			url.searchParams.delete('h');
+		} else {
+			const encoded = btoa(JSON.stringify(history));
+			url.searchParams.set('h', encoded);
+		}
+
+		return url.toString();
+	}
+
 	async function shareResult() {
-		const url = new URL(window.location.href);
-		const encoded = btoa(JSON.stringify(history));
-		url.searchParams.set('h', encoded);
-		const shareUrl = url.toString();
+		const historyLink = getHistoryLink();
 
 		try {
 			if (navigator.share) {
 				await navigator.share({
 					title: 'Keuzehulp Open Publiceren',
 					text: 'Bekijk mijn advies van de Keuzehulp Open Publiceren',
-					url: shareUrl
+					url: historyLink
 				});
 			} else {
-				await navigator.clipboard.writeText(shareUrl);
+				await navigator.clipboard.writeText(historyLink);
 				shareButtonText = 'Link gekopieerd';
 				setTimeout(() => {
 					shareButtonText = 'Advies delen';
@@ -83,18 +114,6 @@
 			console.error('Failed to share or copy', e);
 		}
 	}
-
-	onMount(() => {
-		const params = new URLSearchParams(window.location.search);
-		const historyParam = params.get('h');
-		if (historyParam) {
-			try {
-				history = JSON.parse(atob(historyParam));
-			} catch (e) {
-				console.error('Failed to parse history from URL', e);
-			}
-		}
-	});
 </script>
 
 <div class="my-16">
