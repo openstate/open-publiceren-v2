@@ -329,4 +329,4 @@ export const quiz = {
 	}
 } as const satisfies Quiz;
 
-checkQuizContent(quiz);
+if (import.meta.env.DEV) checkQuizContent(quiz);
