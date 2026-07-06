@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '@fontsource-variable/work-sans';
+	import '@fontsource-variable/work-sans/index.css';
 	import '../app.css';
 
 	import favicon32 from '$lib/assets/favicon-32.png';

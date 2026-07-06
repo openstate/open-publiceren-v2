@@ -1,4 +1,4 @@
-import * as sitemap from 'super-sitemap';
+import * as sitemap from 'super-sitemap/sveltekit';
 import type { RequestHandler } from '@sveltejs/kit';
 import { CORS_ORIGIN } from '$env/static/private';
 import { contentTypes, getAllContent } from '$lib/content';

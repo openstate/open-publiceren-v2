@@ -26,7 +26,7 @@
 				</a>
 			</div>
 		</div>
-		<div >
+		<div>
 			<p class="mb-1 font-medium text-stone-800">Contact</p>
 			<a href="mailto:info@forumstandaardisatie.nl" class="underline hover:text-stone-900">
 				info@forumstandaardisatie.nl

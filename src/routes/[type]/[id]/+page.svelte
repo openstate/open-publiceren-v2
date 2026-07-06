@@ -8,6 +8,7 @@
 	</h1>
 
 	<div class="prose max-w-[80ch] prose-neutral">
+		<!-- eslint-disable-next-line svelte/no-at-html-tags -- trusted content from our own markdown files -->
 		{@html data.body}
 	</div>
 </article>

@@ -48,14 +48,14 @@
 					{/if}
 				</div>
 				<p class="mb-6 grow text-stone-700">
-				{#each item.description.split(/(\S+@\S+\.\S+)/) as part}
-					{#if part.match(/^\S+@\S+\.\S+$/)}
-						<a href="mailto:{part}" class="underline hover:text-stone-900">{part}</a>
-					{:else}
-						{part}
-					{/if}
-				{/each}
-			</p>
+					{#each item.description.split(/(\S+@\S+\.\S+)/) as part}
+						{#if part.match(/^\S+@\S+\.\S+$/)}
+							<a href="mailto:{part}" class="underline hover:text-stone-900">{part}</a>
+						{:else}
+							{part}
+						{/if}
+					{/each}
+				</p>
 				{#if item.link !== false}
 					<Button href="/{data.type}/{item.id}" variant="tertiary" size="md" class="mt-4">
 						lees meer ➞
