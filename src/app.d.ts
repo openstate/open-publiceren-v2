@@ -8,6 +8,10 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	interface Window {
+		_paq?: (string | undefined)[][];
+	}
 }
 
 export {};
